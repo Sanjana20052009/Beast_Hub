@@ -113,29 +113,33 @@
             <p class="section-subtitle">Verified achievements spanning digital entertainment, global media production, physical consumer brands, and international charity.</p>
 
             <div class="highlights-grid">
-                <div class="highlight-card">
+                <div class="highlight-card" onclick="openVideoModal('Most Subscribed Creator', 'https://www.youtube.com/embed/0e3GPea1Tyg')">
                     <div class="h-icon">📺</div>
                     <div class="h-category">ENTERTAINMENT</div>
                     <h3>#1 Most Subscribed</h3>
                     <p>Surpassed T-Series to become the single most subscribed YouTube channel in history, with over 300 million main-channel subscribers and 70+ billion views.</p>
+                    <span class="watch-link">▶ Watch Feature</span>
                 </div>
-                <div class="highlight-card">
+                <div class="highlight-card" onclick="openVideoModal('Beast Games Amazon Prime', 'https://www.youtube.com/embed/gyLqpnfZwbo')">
                     <div class="h-icon">🏆</div>
                     <div class="h-category">HOLLYWOOD BUDGETS</div>
                     <h3>Beast Games</h3>
                     <p>Created Beast Games with Amazon Prime Video, assembling 1,000 contestants competing for a $5,000,000 cash prize—the biggest prize in reality show history.</p>
+                    <span class="watch-link">▶ Watch Feature</span>
                 </div>
-                <div class="highlight-card">
+                <div class="highlight-card" onclick="openVideoModal('Feastables CPG Launch', 'https://www.youtube.com/embed/TJ2atwkmkT0')">
                     <div class="h-icon">📦</div>
                     <div class="h-category">BUSINESS VENTURES</div>
                     <h3>Feastables CPG</h3>
                     <p>Disrupted mass-market snacking by launching Feastables chocolate with ethically sourced cocoa, stocked in over 50,000 stores across North America and Europe.</p>
+                    <span class="watch-link">▶ Watch Feature</span>
                 </div>
-                <div class="highlight-card">
+                <div class="highlight-card" onclick="openVideoModal('Beast Philanthropy Mission', 'https://www.youtube.com/embed/0e3GPea1Tyg')">
                     <div class="h-icon">🌍</div>
                     <div class="h-category">GLOBAL INITIATIVES</div>
                     <h3>Beast Philanthropy</h3>
                     <p>Established a standalone 501(c)(3) nonprofit operating massive mobile food pantries, emergency disaster relief, and clean drinking water infrastructure.</p>
+                    <span class="watch-link">▶ Watch Feature</span>
                 </div>
             </div>
         </div>
@@ -147,15 +151,17 @@
             <p class="section-subtitle">While stunts grab headlines, Jimmy's true legacy is leveraging audience attention into verified, systemic change. Beast Philanthropy maintains audited food-distribution facilities, finances community water boreholes, funds sight-restoring surgeries, and rallies creator coalitions to tackle environmental crises.</p>
             
             <div class="impact-preview-grid">
-                <div class="impact-mini-card">
+                <div class="impact-mini-card" onclick="openVideoModal('Building 100 Wells in Africa', 'https://www.youtube.com/embed/gyLqpnfZwbo')">
                     <div class="im-tag">CLEAN WATER</div>
                     <h3>100+ Wells</h3>
                     <p>Providing fresh drinking water across multiple African nations.</p>
+                    <span class="watch-link" style="margin-top: 1rem; display: inline-block;">▶ Watch Mission</span>
                 </div>
-                <div class="impact-mini-card">
+                <div class="impact-mini-card" onclick="openVideoModal('1,000 Blind People See', 'https://www.youtube.com/embed/TJ2atwkmkT0')">
                     <div class="im-tag">SURGICAL ACCESS</div>
                     <h3>1,000+ Surgeries</h3>
                     <p>Curing preventable blindness by funding cataract extractions.</p>
+                    <span class="watch-link" style="margin-top: 1rem; display: inline-block;">▶ Watch Mission</span>
                 </div>
             </div>
             <div style="text-align: center; margin-top: 2.5rem;">
@@ -172,7 +178,7 @@
         </div>
     </section>
 
-    <!-- VIEW 2: JOURNEY (Interactive Timeline with YouTube Videos) -->
+    <!-- VIEW 2: JOURNEY -->
     <section id="journey-view" class="view-section">
         <div class="journey-header-container">
             <div class="badge-pill">🕒 VERIFIED CHRONICLE (2012 – PRESENT)</div>
@@ -310,45 +316,111 @@
         </div>
     </section>
 
-    <!-- VIEW 3: IMPACT -->
+    <!-- VIEW 3: IMPACT (Redesigned matching reference screenshots) -->
     <section id="impact-view" class="view-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Philanthropy & Global Impact Breakdown</h2>
-                <span class="section-subtitle">Real-world community initiatives, clean water, and medical missions</span>
+        <div class="container" style="max-width: 1200px;">
+            
+            <!-- SECTION 1: BEAST PHILANTHROPY -->
+            <div class="impact-section-header">
+                <div class="badge-pill">● 501(C)(3) INSTITUTION</div>
+                <h2 class="section-title" style="font-size: 3rem;">BEAST PHILANTHROPY</h2>
+                <p class="section-subtitle">
+                    Formally established in 2020, Beast Philanthropy exists as an independent, audited nonprofit using 100% of its video revenue, merchandise profits, and donor contributions toward humanitarian relief.
+                </p>
             </div>
-            <div class="tracks-list">
-                <div class="track-item" onclick="openVideoModal('1,000 Blind People', 'https://www.youtube.com/embed/TJ2atwkmkT0')">
-                    <div class="track-info">
-                        <span class="track-index">01</span>
-                        <div>
-                            <h4>Curing 1,000 People's Blindness Worldwide</h4>
-                            <p>Status: <span style="color: var(--primary); font-weight: 600;">Completed · 1,000 Surgeries Funded</span></p>
-                        </div>
-                    </div>
-                    <span class="watch-link">▶ Watch Impact Story</span>
+
+            <div class="impact-cards-grid">
+                <div class="impact-big-card" onclick="openVideoModal('Mobile Food Pantries', 'https://www.youtube.com/embed/0e3GPea1Tyg')">
+                    <div class="ibc-icon">🍏</div>
+                    <h3>Mobile Food Pantries</h3>
+                    <p>Operating a 50,000-square-foot fulfillment warehouse in Greenville, NC, distributing millions of pounds of fresh produce, meat, and shelf-stable goods to underserved communities throughout North Carolina.</p>
+                    <div class="ibc-stat">50M+ Meals Provided</div>
+                    <span class="watch-link" style="margin-top: 1.5rem; display: inline-block;">▶ Watch Philanthropy Story</span>
                 </div>
-                <div class="track-item" onclick="openVideoModal('Planting 20 Million Trees', 'https://www.youtube.com/embed/0e3GPea1Tyg')">
-                    <div class="track-info">
-                        <span class="track-index">02</span>
-                        <div>
-                            <h4>TeamTrees: Planting 20,000,000 Trees Globally</h4>
-                            <p>Status: <span style="color: #10b981; font-weight: 600;">Completed · Global Forest Initiative</span></p>
-                        </div>
-                    </div>
-                    <span class="watch-link">▶ Watch Impact Story</span>
+                <div class="impact-big-card" onclick="openVideoModal('Clean Water Wells', 'https://www.youtube.com/embed/gyLqpnfZwbo')">
+                    <div class="ibc-icon">💧</div>
+                    <h3>Clean Water Wells</h3>
+                    <p>Funded and constructed over 100 solar-powered deep boreholes in rural villages across Kenya, Cameroon, and Uganda, eliminating multi-mile treks for contaminated surface water.</p>
+                    <div class="ibc-stat">100+ Solar Boreholes Built</div>
+                    <span class="watch-link" style="margin-top: 1.5rem; display: inline-block;">▶ Watch Philanthropy Story</span>
                 </div>
-                <div class="track-item" onclick="openVideoModal('Building Wells in Africa', 'https://www.youtube.com/embed/gyLqpnfZwbo')">
-                    <div class="track-info">
-                        <span class="track-index">03</span>
-                        <div>
-                            <h4>Building 100 Fresh Water Wells in Africa</h4>
-                            <p>Status: <span style="color: #3b82f6; font-weight: 600;">Active · Clean Water Delivered</span></p>
-                        </div>
-                    </div>
-                    <span class="watch-link">▶ Watch Impact Story</span>
+                <div class="impact-big-card" onclick="openVideoModal('Preventable Blindness Surgeries', 'https://www.youtube.com/embed/TJ2atwkmkT0')">
+                    <div class="ibc-icon">👁️</div>
+                    <h3>Preventable Blindness Surgeries</h3>
+                    <p>Collaborated with nonprofit surgical clinics worldwide to sponsor 10-minute cataract removal operations for patients unable to afford routine ophthalmologic care.</p>
+                    <div class="ibc-stat">1,000+ Cataract Extractions</div>
+                    <span class="watch-link" style="margin-top: 1.5rem; display: inline-block;">▶ Watch Philanthropy Story</span>
                 </div>
             </div>
+
+            <!-- SECTION 2: CREATOR-LED CHARITABLE INITIATIVES -->
+            <div class="impact-section-header" style="margin-top: 7rem;">
+                <h2 class="section-title" style="font-size: 2.5rem;">CREATOR-LED CHARITABLE INITIATIVES</h2>
+                <p class="section-subtitle">
+                    Transforming competitive creator culture into coordinated collective action tackling global ecological challenges.
+                </p>
+            </div>
+
+            <div class="impact-duo-grid">
+                <div class="impact-wide-card" onclick="openVideoModal('TeamTrees Initiative', 'https://www.youtube.com/embed/0e3GPea1Tyg')">
+                    <div class="iwc-top">
+                        <div class="iwc-icon">🌳</div>
+                        <span class="iwc-date">EST. OCTOBER 2019</span>
+                    </div>
+                    <h3>#TEAMTREES</h3>
+                    <div class="iwc-highlight">20 Million Trees Planted</div>
+                    <p>Launched alongside Mark Rober and the Arbor Day Foundation, #TeamTrees set a goal to raise $20 million ($1 = 1 tree). Tens of thousands of creators uploaded simultaneous videos with zero monetization competition, reaching the 20-million tree milestone in under 60 days. Trees have been planted across every continent except Antarctica.</p>
+                    <div class="partner-box">
+                        <strong>Key Partners:</strong> Arbor Day Foundation, US Forest Service, international forestry organizations.
+                    </div>
+                    <span class="watch-link" style="margin-top: 1.5rem; display: inline-block;">▶ Watch TeamTrees Documentary</span>
+                </div>
+
+                <div class="impact-wide-card" onclick="openVideoModal('TeamSeas Initiative', 'https://www.youtube.com/embed/gyLqpnfZwbo')">
+                    <div class="iwc-top">
+                        <div class="iwc-icon">🌊</div>
+                        <span class="iwc-date">EST. OCTOBER 2021</span>
+                    </div>
+                    <h3>#TEAMSEAS</h3>
+                    <div class="iwc-highlight">34 Million Pounds of Trash Removed</div>
+                    <p>Partnering with Ocean Conservancy and The Ocean Cleanup, #TeamSeas targeted 30 million pounds of plastic waste in global oceans, rivers, and beaches ($1 = 1 pound). The initiative funded solar-powered river Interceptors that stop floating garbage before reaching open seas, alongside community cleanup operations across 60+ countries.</p>
+                    <div class="partner-box">
+                        <strong>Key Partners:</strong> The Ocean Cleanup (Boyan Slat), Ocean Conservancy, global coastal communities.
+                    </div>
+                    <span class="watch-link" style="margin-top: 1.5rem; display: inline-block;">▶ Watch TeamSeas Documentary</span>
+                </div>
+            </div>
+
+            <!-- SECTION 3: FOOD AND BUSINESS VENTURES -->
+            <div class="impact-section-header" style="margin-top: 7rem;">
+                <div class="badge-pill">● ETHICAL COMMERCE</div>
+                <h2 class="section-title" style="font-size: 2.5rem;">FOOD AND BUSINESS VENTURES</h2>
+                <p class="section-subtitle">
+                    How consumer products like Feastables channel commerce into creator-brand disruption while supporting sustainable supply chains.
+                </p>
+            </div>
+
+            <div class="impact-business-banner" onclick="openVideoModal('Feastables Supply Chain', 'https://www.youtube.com/embed/TJ2atwkmkT0')">
+                <div class="ibb-left">
+                    <h3>FEASTABLES & RESPONSIBLE SOURCING</h3>
+                    <p>Unlike legacy confectionery giants using artificial preservatives and complex additives, Jimmy designed Feastables with grass-fed dairy, simple cane sugars, and ethically verified cocoa farms.</p>
+                    <p style="margin-top: 1rem;">The company actively works to eliminate supply chain opacity in West African cocoa harvesting, ensuring farmers receive fair compensation while bringing high-quality treats into thousands of mainstream grocery retailers worldwide.</p>
+                    <span class="watch-link" style="margin-top: 1.5rem; display: inline-block;">▶ Watch Feastables Transparency Special</span>
+                </div>
+                <div class="ibb-right">
+                    <div class="ibb-stat-box">
+                        <span class="ibs-title">DISTRIBUTION</span>
+                        <span class="ibs-val">50,000+</span>
+                        <span class="ibs-desc">Retail stores stocking Feastables globally.</span>
+                    </div>
+                    <div class="ibb-stat-box">
+                        <span class="ibs-title">INGREDIENTS</span>
+                        <span class="ibs-val">Clean</span>
+                        <span class="ibs-desc">Grass-fed milk and simple organic cocoa.</span>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 

@@ -70,14 +70,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// Video Modal Functions
+// Video Modal Functions with Autoplay support
 function openVideoModal(title, videoUrl) {
     const modal = document.getElementById('videoModal');
     const modalTitle = document.getElementById('modalTitle');
     const modalIframe = document.getElementById('modalIframe');
 
     modalTitle.textContent = title;
-    modalIframe.src = videoUrl;
+    modalIframe.src = videoUrl + "?autoplay=1";
     modal.classList.add('active');
 }
 

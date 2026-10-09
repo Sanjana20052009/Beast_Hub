@@ -373,11 +373,32 @@ header {
     cursor: pointer;
     display: flex;
     flex-direction: column;
+    position: relative;
+    overflow: hidden;
 }
 
 .highlight-card:hover {
     transform: translateY(-5px);
     border-color: var(--primary);
+}
+
+.highlight-card::after {
+    content: '▶ Click to Watch';
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(245, 158, 11, 0.15);
+    color: var(--primary);
+    padding: 0.25rem 0.65rem;
+    border-radius: 20px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+.highlight-card:hover::after {
+    opacity: 1;
 }
 
 .h-icon {
@@ -428,11 +449,13 @@ header {
     border: 1px solid var(--border-color);
     padding: 2.25rem;
     border-radius: 16px;
-    transition: border-color 0.25s ease;
+    transition: border-color 0.25s ease, transform 0.25s ease;
+    cursor: pointer;
 }
 
 .impact-mini-card:hover {
     border-color: #10b981;
+    transform: translateY(-3px);
 }
 
 .im-tag {
@@ -478,6 +501,198 @@ header {
     max-width: 650px;
     margin: 0 auto;
     line-height: 1.6;
+}
+
+/* IMPACT TAB STYLING (Matching Reference Images) */
+.impact-section-header {
+    margin-bottom: 3rem;
+}
+
+.impact-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 2rem;
+}
+
+.impact-big-card {
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 2.5rem;
+    cursor: pointer;
+    transition: transform 0.25s ease, border-color 0.25s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.impact-big-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+}
+
+.ibc-icon {
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+}
+
+.impact-big-card h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.impact-big-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.ibc-stat {
+    font-family: monospace;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.impact-duo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 2rem;
+}
+
+.impact-wide-card {
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 3rem 2.5rem;
+    cursor: pointer;
+    transition: transform 0.25s ease, border-color 0.25s ease;
+    position: relative;
+}
+
+.impact-wide-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--primary);
+}
+
+.iwc-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.iwc-icon {
+    font-size: 2rem;
+}
+
+.iwc-date {
+    font-family: monospace;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    padding: 0.35rem 0.85rem;
+    border-radius: 50px;
+}
+
+.impact-wide-card h3 {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin-bottom: 0.5rem;
+}
+
+.iwc-highlight {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 1.25rem;
+}
+
+.impact-wide-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.partner-box {
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    padding: 1rem 1.25rem;
+    border-radius: 10px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.partner-box strong {
+    color: var(--text-main);
+}
+
+.impact-business-banner {
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 3.5rem;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    cursor: pointer;
+    transition: border-color 0.25s ease;
+}
+
+.impact-business-banner:hover {
+    border-color: var(--primary);
+}
+
+.ibb-left h3 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    letter-spacing: -0.5px;
+}
+
+.ibb-left p {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.ibb-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.ibb-stat-box {
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+
+.ibs-title {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--primary);
+    letter-spacing: 1px;
+    margin-bottom: 0.25rem;
+}
+
+.ibs-val {
+    display: block;
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin-bottom: 0.25rem;
+}
+
+.ibs-desc {
+    font-size: 0.85rem;
+    color: var(--text-muted);
 }
 
 /* JOURNEY TIMELINE STYLING */
@@ -779,6 +994,7 @@ header {
     border-radius: 16px;
     padding: 1.5rem;
     position: relative;
+    box-shadow: 0 0 50px rgba(245, 158, 11, 0.2);
 }
 
 .modal-close {
@@ -901,6 +1117,9 @@ footer {
         display: none;
     }
     .timeline-row {
+        grid-template-columns: 1fr;
+    }
+    .impact-duo-grid, .impact-business-banner {
         grid-template-columns: 1fr;
     }
     .nav-links {
