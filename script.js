@@ -53,19 +53,34 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Handle Challenge Submission Form
-    const challengeForm = document.getElementById('challengeForm');
+    // Handle Challenge Submission Form via Formspree Backend
+    const challengeForm = document.getElementById('fs-frm');
     if (challengeForm) {
-        challengeForm.addEventListener('submit', (e) => {
+        challengeForm.addEventListener('submit', async (e) => {
             e.preventDefault();
-            
-            const name = document.getElementById('userName').value;
-            const category = document.getElementById('challengeCategory').value;
+            const form = e.target;
+            const data = new FormData(form);
 
-            alert(`🎉 Success, ${name}! Your proposal for "${category}" has been securely transmitted to the Beast Hub backend database.`);
-            
-            challengeForm.reset();
-            switchView('journey');
+            try {
+                const response = await fetch(form.action, {
+                    method: form.method,
+                    body: data,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    const name = document.getElementById('full-name').value;
+                    alert(`🎉 Success, ${name}! Your proposal has been securely transmitted to the Beast Hub community vault.`);
+                    challengeForm.reset();
+                    switchView('journey');
+                } else {
+                    alert('❌ There was a problem submitting your form. Please try again later.');
+                }
+            } catch (error) {
+                alert('❌ Network error. Please check your connection and try again.');
+            }
         });
     }
 });

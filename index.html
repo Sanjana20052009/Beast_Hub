@@ -376,25 +376,26 @@
         </div>
     </section>
 
-    <!-- VIEW 4: COMMUNITY & SUBMISSION FORM -->
+    <!-- VIEW 4: COMMUNITY & SUBMISSION FORM WITH FORMSPREE BACKEND -->
     <section id="community-view" class="view-section">
         <div class="container" style="max-width: 650px;">
             <div class="section-header" style="justify-content: center; text-align: center;">
                 <h2>Share Your Challenge Idea</h2>
                 <span class="section-subtitle">Got an ambitious challenge or giveback proposal? Send it directly to the community vault.</span>
             </div>
-            <form id="challengeForm" class="form-card">
+            
+            <form id="fs-frm" class="form-card" accept-charset="utf-8" action="https://formspree.io/f/mwlvodyb" method="POST">
                 <div class="form-group">
                     <label>Your Full Name</label>
-                    <input type="text" id="userName" required placeholder="e.g. Alex Johnson">
+                    <input type="text" name="name" id="full-name" required placeholder="e.g. Alex Johnson">
                 </div>
                 <div class="form-group">
                     <label>Email Address</label>
-                    <input type="email" id="userEmail" required placeholder="e.g. alex@example.com">
+                    <input type="email" name="email" id="email-address" required placeholder="e.g. alex@example.com">
                 </div>
                 <div class="form-group">
                     <label>Challenge Category</label>
-                    <select id="challengeCategory">
+                    <select name="category" id="challengeCategory">
                         <option>Survival & Endurance</option>
                         <option>Extreme Sports & Stunts</option>
                         <option>Cash Prize Games</option>
@@ -403,8 +404,12 @@
                 </div>
                 <div class="form-group">
                     <label>Challenge Description & Rules</label>
-                    <textarea id="challengeDesc" rows="4" required placeholder="Describe your challenge idea in detail..."></textarea>
+                    <textarea name="message" id="message" rows="4" required placeholder="Describe your challenge idea in detail..."></textarea>
                 </div>
+
+                <!-- Honeypot field to block automated spam bots -->
+                <input type="text" name="_gotcha" style="display:none" />
+
                 <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.9rem;">SUBMIT PROPOSAL ↗</button>
             </form>
         </div>
