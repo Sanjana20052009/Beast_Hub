@@ -252,7 +252,7 @@
 
     <!-- VIEW 3: IMPACT -->
     <section id="impact-view" class="view-section">
-        <div class="container" style="max-width: 1200px;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 4rem 2rem;">
             
             <!-- SECTION 1: BEAST PHILANTHROPY -->
             <div class="impact-section-header">
@@ -376,15 +376,15 @@
         </div>
     </section>
 
-    <!-- VIEW 4: COMMUNITY & SUBMISSION FORM WITH FORMSPREE BACKEND -->
+    <!-- VIEW 4: COMMUNITY & SUBMISSION FORM -->
     <section id="community-view" class="view-section">
-        <div class="container" style="max-width: 650px;">
-            <div class="section-header" style="justify-content: center; text-align: center;">
+        <div class="container" style="max-width: 650px; margin: 0 auto; padding: 4rem 2rem;">
+            <div class="section-header" style="justify-content: center; text-align: center; margin-bottom: 2rem;">
                 <h2>Share Your Challenge Idea</h2>
-                <span class="section-subtitle">Got an ambitious challenge or giveback proposal? Send it directly to the community vault.</span>
+                <span class="section-subtitle">Got an ambitious challenge or giveback proposal? Send it directly to your custom Render backend server database.</span>
             </div>
             
-            <form id="fs-frm" class="form-card" accept-charset="utf-8" action="https://formspree.io/f/mwlvodyb" method="POST">
+            <form id="challengeForm" class="form-card">
                 <div class="form-group">
                     <label>Your Full Name</label>
                     <input type="text" name="name" id="full-name" required placeholder="e.g. Alex Johnson">
@@ -406,9 +406,6 @@
                     <label>Challenge Description & Rules</label>
                     <textarea name="message" id="message" rows="4" required placeholder="Describe your challenge idea in detail..."></textarea>
                 </div>
-
-                <!-- Honeypot field to block automated spam bots -->
-                <input type="text" name="_gotcha" style="display:none" />
 
                 <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.9rem;">SUBMIT PROPOSAL ↗</button>
             </form>

@@ -53,33 +53,40 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Handle Challenge Submission Form via Formspree Backend
-    const challengeForm = document.getElementById('fs-frm');
+    // Handle Challenge Submission Form via Custom Render Backend
+    const challengeForm = document.getElementById('challengeForm');
     if (challengeForm) {
         challengeForm.addEventListener('submit', async (e) => {
             e.preventDefault();
-            const form = e.target;
-            const data = new FormData(form);
+            
+            const formData = {
+                name: document.getElementById('full-name').value,
+                email: document.getElementById('email-address').value,
+                category: document.getElementById('challengeCategory').value,
+                message: document.getElementById('message').value
+            };
 
             try {
-                const response = await fetch(form.action, {
-                    method: form.method,
-                    body: data,
+                const response = await fetch('https://beast-hub-backend.onrender.com/api/submit-challenge', {
+                    method: 'POST',
                     headers: {
+                        'Content-Type': 'application/json',
                         'Accept': 'application/json'
-                    }
+                    },
+                    body: JSON.stringify(formData)
                 });
 
-                if (response.ok) {
-                    const name = document.getElementById('full-name').value;
-                    alert(`🎉 Success, ${name}! Your proposal has been securely transmitted to the Beast Hub community vault.`);
+                const result = await response.json();
+
+                if (response.ok && result.success) {
+                    alert(`🎉 Success, ${formData.name}! Your proposal has been securely saved to your custom server database.`);
                     challengeForm.reset();
                     switchView('journey');
                 } else {
-                    alert('❌ There was a problem submitting your form. Please try again later.');
+                    alert('❌ Server error: ' + (result.error || 'Please try again later.'));
                 }
             } catch (error) {
-                alert('❌ Network error. Please check your connection and try again.');
+                alert('❌ Network error. Could not connect to the backend server.');
             }
         });
     }
