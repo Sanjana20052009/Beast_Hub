@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
+    // Attach click events to all buttons and nav links with data-target
     navItems.forEach(item => {
         item.addEventListener('click', (e) => {
             e.preventDefault();
@@ -41,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const name = document.getElementById('userName').value;
             const category = document.getElementById('challengeCategory').value;
 
-            alert(`🎉 Success, ${name}! Your challenge idea in "${category}" has been successfully submitted to the Beast Hub community vault.`);
+            alert(`🎉 Success, ${name}! Your proposal for "${category}" has been securely transmitted to the Beast Hub backend database.`);
             
             challengeForm.reset();
             switchView('journey');
@@ -49,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// Video Modal Functions (Global Scope)
+// Video Modal Functions
 function openVideoModal(title, videoUrl) {
     const modal = document.getElementById('videoModal');
     const modalTitle = document.getElementById('modalTitle');
@@ -64,11 +65,10 @@ function closeVideoModal() {
     const modal = document.getElementById('videoModal');
     const modalIframe = document.getElementById('modalIframe');
 
-    modalIframe.src = ''; // Stops video playback
+    modalIframe.src = '';
     modal.classList.remove('active');
 }
 
-// Close modal when clicking outside content
 window.addEventListener('click', (e) => {
     const modal = document.getElementById('videoModal');
     if (e.target === modal) {
