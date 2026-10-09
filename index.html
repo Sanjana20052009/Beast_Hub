@@ -92,7 +92,7 @@
                         <div class="h-category">ENTERTAINMENT</div>
                         <h3>$456,000 Squid Game In Real Life!</h3>
                         <p>Surpassed records with full-scale physical recreations of iconic games for 456 contestants.</p>
-                        <span class="watch-link">▶ Watch Squid Game Feature</span>
+                        <span class="watch-link">▶ Watch on YouTube</span>
                     </div>
                 </div>
                 <div class="highlight-card card-bg-wells" onclick="openVideoModal('I Built 100 Wells In Africa', 'aSQUg-h8G4s')">
@@ -102,17 +102,17 @@
                         <div class="h-category">PHILANTHROPY ACTION</div>
                         <h3>I Built 100 Wells In Africa</h3>
                         <p>Providing clean, running solar-powered fresh water access to over 500,000 villagers and hospitals.</p>
-                        <span class="watch-link">▶ Watch Wells Documentary</span>
+                        <span class="watch-link">▶ Watch on YouTube</span>
                     </div>
                 </div>
-                <div class="highlight-card card-bg-blind" onclick="openVideoModal('1,000 Blind People See For The First Time', 'TJ2atwkmkT0')">
+                <div class="highlight-card card-bg-blind" onclick="openVideoModal('1,000 Blind People See For The First Time', 'xDfVLFVHsH0')">
                     <div class="card-overlay"></div>
                     <div class="card-content-inner">
                         <div class="h-icon">👁️</div>
                         <div class="h-category">MEDICAL MISSION</div>
                         <h3>1,000 Blind People See</h3>
                         <p>Curing curable blindness by funding straightforward 10-minute cataract removal operations.</p>
-                        <span class="watch-link">▶ Watch Sight Restoration Mission</span>
+                        <span class="watch-link">▶ Watch on YouTube</span>
                     </div>
                 </div>
                 <div class="highlight-card card-bg-trees" onclick="openVideoModal('Planting 20 Million Trees (#TeamTrees)', 'GYh5mYtAax4')">
@@ -122,7 +122,7 @@
                         <div class="h-category">GLOBAL INITIATIVES</div>
                         <h3>Planting 20 Million Trees</h3>
                         <p>Rallying creators worldwide to launch #TeamTrees and plant 20M trees globally.</p>
-                        <span class="watch-link">▶ Watch TeamTrees Special</span>
+                        <span class="watch-link">▶ Watch on YouTube</span>
                     </div>
                 </div>
             </div>
@@ -171,7 +171,7 @@
                         <div class="card-overlay"></div>
                         <div class="card-content-inner">
                             <div class="tm-tag">THE FOUNDATION</div>
-                            <div class="tm-video-preview">▶ Watch Archive Video</div>
+                            <div class="tm-video-preview">▶ Launch Archive Video</div>
                             <div class="tm-footer">VERIFIED MILESTONE ✓</div>
                         </div>
                     </div>
@@ -185,7 +185,7 @@
                         <div class="card-overlay"></div>
                         <div class="card-content-inner">
                             <div class="tm-tag">VIRAL TURNING POINT</div>
-                            <div class="tm-video-preview">▶ Watch Archive Video</div>
+                            <div class="tm-video-preview">▶ Launch Archive Video</div>
                             <div class="tm-footer">VERIFIED MILESTONE ✓</div>
                         </div>
                     </div>
@@ -217,7 +217,7 @@
                         <div class="card-overlay"></div>
                         <div class="card-content-inner">
                             <div class="tm-tag">REINVESTMENT ERA</div>
-                            <div class="tm-video-preview">▶ Watch Archive Video</div>
+                            <div class="tm-video-preview">▶ Launch Archive Video</div>
                             <div class="tm-footer">VERIFIED MILESTONE ✓</div>
                         </div>
                     </div>
@@ -231,7 +231,7 @@
                         <div class="card-overlay"></div>
                         <div class="card-content-inner">
                             <div class="tm-tag">HISTORIC MASTERPIECE</div>
-                            <div class="tm-video-preview">▶ Watch Archive Video</div>
+                            <div class="tm-video-preview">▶ Launch Archive Video</div>
                             <div class="tm-footer">VERIFIED MILESTONE ✓</div>
                         </div>
                     </div>
@@ -284,7 +284,7 @@
                         <span class="watch-link" style="margin-top: 1.5rem; display: inline-block;">▶ Watch Wells Documentary</span>
                     </div>
                 </div>
-                <div class="impact-big-card card-bg-blind" onclick="openVideoModal('1,000 Blind People See For The First Time', 'TJ2atwkmkT0')">
+                <div class="impact-big-card card-bg-blind" onclick="openVideoModal('1,000 Blind People See For The First Time', 'xDfVLFVHsH0')">
                     <div class="card-overlay"></div>
                     <div class="card-content-inner">
                         <div class="ibc-icon">👁️</div>
@@ -349,7 +349,7 @@
                 </p>
             </div>
 
-            <div class="impact-business-banner card-bg-feast" onclick="openVideoModal('1,000 Blind People See For The First Time', 'TJ2atwkmkT0')">
+            <div class="impact-business-banner card-bg-feast" onclick="openVideoModal('1,000 Blind People See For The First Time', 'xDfVLFVHsH0')">
                 <div class="card-overlay"></div>
                 <div class="card-content-inner" style="display: contents;">
                     <div class="ibb-left">
@@ -410,13 +410,16 @@
         </div>
     </section>
 
-    <!-- VIDEO MODAL POPUP -->
+    <!-- DIRECT YOUTUBE LAUNCH MODAL POPUP -->
     <div id="videoModal" class="modal-overlay">
-        <div class="modal-content">
+        <div class="modal-content modal-card-popup">
             <button class="modal-close" onclick="closeVideoModal()">×</button>
+            <div class="modal-badge-top">▶ VERIFIED YOUTUBE FEATURE</div>
             <h3 id="modalTitle">Video Title</h3>
-            <div class="video-container">
-                <iframe id="modalIframe" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p class="modal-desc">This video is ready to stream directly on official YouTube channels without embedding restrictions.</p>
+            <div class="modal-actions-row">
+                <a id="modalYoutubeLink" href="#" target="_blank" class="btn btn-primary modal-watch-btn">WATCH ON YOUTUBE ↗</a>
+                <button class="btn btn-ghost" onclick="closeVideoModal()">CLOSE</button>
             </div>
         </div>
     </div>

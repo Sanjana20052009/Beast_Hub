@@ -70,22 +70,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// Video Modal Functions with Precise Video ID Routing
+// Direct YouTube Launch Modal Functions
 function openVideoModal(title, videoId) {
     const modal = document.getElementById('videoModal');
     const modalTitle = document.getElementById('modalTitle');
-    const modalIframe = document.getElementById('modalIframe');
+    const modalYoutubeLink = document.getElementById('modalYoutubeLink');
 
     modalTitle.textContent = title;
-    modalIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+    modalYoutubeLink.href = `https://www.youtube.com/watch?v=${videoId}`;
     modal.classList.add('active');
 }
 
 function closeVideoModal() {
     const modal = document.getElementById('videoModal');
-    const modalIframe = document.getElementById('modalIframe');
-
-    modalIframe.src = '';
     modal.classList.remove('active');
 }
 
