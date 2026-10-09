@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beast Hub | Unofficial Fan Portal & Archive</title>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Header & Navbar -->
     <header>
         <div class="nav-container">
             <a href="#" class="logo" data-target="home">
@@ -32,7 +35,11 @@
         </div>
     </header>
 
+    <!-- MAIN CONTENT VIEWS -->
+
+    <!-- VIEW 1: HOME -->
     <section id="home-view" class="view-section active">
+        <!-- Hero Section -->
         <div class="hero">
             <div class="hero-badge">
                 🔥 UNOFFICIAL FAN PORTAL & ARCHIVE | EST. 2012–PRESENT
@@ -45,6 +52,7 @@
             </div>
         </div>
 
+        <!-- Stats Bar -->
         <div class="stats-wrapper">
             <div class="stats-container">
                 <div class="stat-box">
@@ -70,44 +78,46 @@
             </div>
         </div>
 
+        <!-- Built Different Section -->
         <div class="story-section">
             <div class="badge-pill">● VERIFIED HIGHLIGHTS</div>
             <h2 class="section-title">BUILT DIFFERENT</h2>
             <p class="section-subtitle">Verified achievements spanning digital entertainment, global media production, physical consumer brands, and international charity.</p>
 
             <div class="highlights-grid">
-                <div class="highlight-card" onclick="openVideoModal('Most Subscribed Creator', '0e3GPea1Tyg')">
+                <div class="highlight-card" onclick="openVideoModal('$456,000 Squid Game In Real Life!', '0e3GPea1Tyg')">
                     <div class="h-icon">📺</div>
                     <div class="h-category">ENTERTAINMENT</div>
-                    <h3>#1 Most Subscribed</h3>
-                    <p>Surpassed T-Series to become the single most subscribed YouTube channel in history, with over 300 million main-channel subscribers and 70+ billion views.</p>
-                    <span class="watch-link">▶ Watch Feature</span>
+                    <h3>$456,000 Squid Game In Real Life!</h3>
+                    <p>Surpassed records with full-scale physical recreations of Red Light Green Light, Dalgona, Tug of War, and Glass Bridge for 456 contestants.</p>
+                    <span class="watch-link">▶ Watch Squid Game Feature</span>
                 </div>
-                <div class="highlight-card" onclick="openVideoModal('Beast Games Amazon Prime', 'gyLqpnfZwbo')">
-                    <div class="h-icon">🏆</div>
-                    <div class="h-category">HOLLYWOOD BUDGETS</div>
-                    <h3>Beast Games</h3>
-                    <p>Created Beast Games with Amazon Prime Video, assembling 1,000 contestants competing for a $5,000,000 cash prize—the biggest prize in reality show history.</p>
-                    <span class="watch-link">▶ Watch Feature</span>
+                <div class="highlight-card" onclick="openVideoModal('I Built 100 Wells In Africa', 'aSQUg-h8G4s')">
+                    <div class="h-icon">💧</div>
+                    <div class="h-category">PHILANTHROPY ACTION</div>
+                    <h3>I Built 100 Wells In Africa</h3>
+                    <p>Providing clean, running solar-powered fresh water access to over 500,000 villagers, schools, and hospitals across Kenya, Uganda, and Zimbabwe.</p>
+                    <span class="watch-link">▶ Watch Wells Documentary</span>
                 </div>
-                <div class="highlight-card" onclick="openVideoModal('Feastables CPG Launch', 'TJ2atwkmkT0')">
-                    <div class="h-icon">📦</div>
-                    <div class="h-category">BUSINESS VENTURES</div>
-                    <h3>Feastables CPG</h3>
-                    <p>Disrupted mass-market snacking by launching Feastables chocolate with ethically sourced cocoa, stocked in over 50,000 stores across North America and Europe.</p>
-                    <span class="watch-link">▶ Watch Feature</span>
+                <div class="highlight-card" onclick="openVideoModal('1,000 Blind People See For The First Time', 'TJ2atwkmkT0')">
+                    <div class="h-icon">👁️</div>
+                    <div class="h-category">MEDICAL MISSION</div>
+                    <h3>1,000 Blind People See For The First Time</h3>
+                    <p>Curing curable blindness by funding straightforward 10-minute cataract removal operations for patients across multiple nations.</p>
+                    <span class="watch-link">▶ Watch Sight Restoration Mission</span>
                 </div>
-                <div class="highlight-card" onclick="openVideoModal('Beast Philanthropy Mission', '0e3GPea1Tyg')">
+                <div class="highlight-card" onclick="openVideoModal('Planting 20 Million Trees (#TeamTrees)', 'GYh5mYtAax4')">
                     <div class="h-icon">🌍</div>
                     <div class="h-category">GLOBAL INITIATIVES</div>
-                    <h3>Beast Philanthropy</h3>
-                    <p>Established a standalone 501(c)(3) nonprofit operating massive mobile food pantries, emergency disaster relief, and clean drinking water infrastructure.</p>
-                    <span class="watch-link">▶ Watch Feature</span>
+                    <h3>Planting 20 Million Trees</h3>
+                    <p>Rallying thousands of creators worldwide to launch #TeamTrees and plant 20,000,000 trees globally in cooperation with the Arbor Day Foundation.</p>
+                    <span class="watch-link">▶ Watch TeamTrees Special</span>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- VIEW 2: JOURNEY -->
     <section id="journey-view" class="view-section">
         <div class="journey-header-container">
             <div class="badge-pill">🕒 VERIFIED CHRONICLE (2012 – PRESENT)</div>
@@ -119,6 +129,7 @@
                 🛡️ All dates, milestones, and achievements are verified from official public releases and documentary records.
             </div>
 
+            <!-- Filter Buttons -->
             <div class="timeline-filters">
                 <button class="filter-btn active" data-filter="all">ALL</button>
                 <button class="filter-btn" data-filter="early">EARLY DAYS</button>
@@ -128,9 +139,11 @@
             </div>
         </div>
 
+        <!-- Vertical Timeline Section -->
         <div class="timeline-container">
             <div class="timeline-line"></div>
 
+            <!-- Milestone 1 -->
             <div class="timeline-row" data-category="early">
                 <div class="timeline-content-left">
                     <div class="milestone-badge-row">
@@ -142,7 +155,7 @@
                 </div>
                 <div class="timeline-node"><span></span></div>
                 <div class="timeline-content-right">
-                    <div class="timeline-media-card" onclick="openVideoModal('The Foundation', '0e3GPea1Tyg')">
+                    <div class="timeline-media-card" onclick="openVideoModal('Humble Beginnings - First Gaming Videos', '0e3GPea1Tyg')">
                         <div class="tm-tag">THE FOUNDATION</div>
                         <div class="tm-video-preview" style="background: linear-gradient(135deg, #1e293b, #0f172a);">
                             ▶ Watch Archive Video
@@ -152,9 +165,10 @@
                 </div>
             </div>
 
+            <!-- Milestone 2 -->
             <div class="timeline-row" data-category="viral">
                 <div class="timeline-content-left">
-                    <div class="timeline-media-card" onclick="openVideoModal('Counting to 100,000', 'gyLqpnfZwbo')">
+                    <div class="timeline-media-card" onclick="openVideoModal('Counting to 100,000 — The Endurance Breakthrough', 'GYh5mYtAax4')">
                         <div class="tm-tag">VIRAL TURNING POINT</div>
                         <div class="tm-video-preview" style="background: linear-gradient(135deg, #334155, #1e293b);">
                             ▶ Watch Archive Video
@@ -169,10 +183,11 @@
                         <span class="m-tag">🏆 Viral Growth</span>
                     </div>
                     <h3>Counting to 100,000 — The Endurance Breakthrough</h3>
-                    <p>Jimmy spent over 40 exhausting hours counting aloud from 1 to 100,000 in a single unyielding video. The sheer absurdity, relentless discipline, and raw human endurance captivated the internet.</p>
+                    <p>Jimmy spent over 40 exhausting hours counting aloud from 1 to 100,000 in a single unyielding video. The sheer absurdity, relentless discipline, and raw human endurance captivated the internet, inaugurating a new genre of extreme stunt endurance content.</p>
                 </div>
             </div>
 
+            <!-- Milestone 3 -->
             <div class="timeline-row" data-category="philanthropy">
                 <div class="timeline-content-left">
                     <div class="milestone-badge-row">
@@ -180,11 +195,11 @@
                         <span class="m-tag">♥ Philanthropy</span>
                     </div>
                     <h3>Giving Away Money & The Reinvestment Flywheel</h3>
-                    <p>When Jimmy received his first significant brand sponsorship, rather than keeping the income, he gave every dollar away. Realizing high-stakes generosity generated higher viewership, he initiated his famous reinvestment flywheel.</p>
+                    <p>When Jimmy received his first significant brand sponsorship, rather than keeping the income, he gave every dollar away. Realizing high-stakes generosity generated higher viewership than flashy materialism, he initiated his famous reinvestment flywheel.</p>
                 </div>
                 <div class="timeline-node"><span></span></div>
                 <div class="timeline-content-right">
-                    <div class="timeline-media-card" onclick="openVideoModal('Giving Away Money', 'TJ2atwkmkT0')">
+                    <div class="timeline-media-card" onclick="openVideoModal('Giving Away Money & Reinvestment', 'TJ2atwkmkT0')">
                         <div class="tm-tag">REINVESTMENT ERA</div>
                         <div class="tm-video-preview" style="background: linear-gradient(135deg, #1e3a8a, #1e293b);">
                             ▶ Watch Archive Video
@@ -194,9 +209,10 @@
                 </div>
             </div>
 
+            <!-- Milestone 4 -->
             <div class="timeline-row" data-category="mega">
                 <div class="timeline-content-left">
-                    <div class="timeline-media-card" onclick="openVideoModal('$456,000 Squid Game In Real Life', '0e3GPea1Tyg')">
+                    <div class="timeline-media-card" onclick="openVideoModal('$456,000 Squid Game In Real Life!', '0e3GPea1Tyg')">
                         <div class="tm-tag">HISTORIC MASTERPIECE</div>
                         <div class="tm-video-preview" style="background: linear-gradient(135deg, #78350f, #1e293b);">
                             ▶ Watch Archive Video
@@ -211,16 +227,18 @@
                         <span class="m-tag">🎬 Mega Production</span>
                     </div>
                     <h3>$456,000 Squid Game In Real Life</h3>
-                    <p>At a cost of over $3.5 million, Jimmy and his team built full-scale physical replicas of every set from Netflix's viral drama Squid Game, casting 456 contestants to compete in safe challenges.</p>
+                    <p>At a cost of over $3.5 million, Jimmy and his team built full-scale physical replicas of every set from Netflix's viral drama Squid Game, casting 456 contestants to compete in safe challenges for a $456,000 cash prize.</p>
                 </div>
             </div>
 
         </div>
     </section>
 
+    <!-- VIEW 3: IMPACT -->
     <section id="impact-view" class="view-section">
         <div class="container" style="max-width: 1200px;">
             
+            <!-- SECTION 1: BEAST PHILANTHROPY -->
             <div class="impact-section-header">
                 <div class="badge-pill">● 501(C)(3) INSTITUTION</div>
                 <h2 class="section-title" style="font-size: 3rem;">BEAST PHILANTHROPY</h2>
@@ -237,22 +255,23 @@
                     <div class="ibc-stat">50M+ Meals Provided</div>
                     <span class="watch-link" style="margin-top: 1.5rem; display: inline-block;">▶ Watch Philanthropy Story</span>
                 </div>
-                <div class="impact-big-card" onclick="openVideoModal('Clean Water Wells', 'gyLqpnfZwbo')">
+                <div class="impact-big-card" onclick="openVideoModal('I Built 100 Wells In Africa', 'aSQUg-h8G4s')">
                     <div class="ibc-icon">💧</div>
                     <h3>Clean Water Wells</h3>
                     <p>Funded and constructed over 100 solar-powered deep boreholes in rural villages across Kenya, Cameroon, and Uganda, eliminating multi-mile treks for contaminated water.</p>
                     <div class="ibc-stat">100+ Solar Boreholes Built</div>
-                    <span class="watch-link" style="margin-top: 1.5rem; display: inline-block;">▶ Watch Philanthropy Story</span>
+                    <span class="watch-link" style="margin-top: 1.5rem; display: inline-block;">▶ Watch Wells Documentary</span>
                 </div>
-                <div class="impact-big-card" onclick="openVideoModal('Preventable Blindness Surgeries', 'TJ2atwkmkT0')">
+                <div class="impact-big-card" onclick="openVideoModal('1,000 Blind People See For The First Time', 'TJ2atwkmkT0')">
                     <div class="ibc-icon">👁️</div>
                     <h3>Preventable Blindness Surgeries</h3>
                     <p>Collaborated with nonprofit surgical clinics worldwide to sponsor 10-minute cataract removal operations for patients unable to afford routine eye care.</p>
                     <div class="ibc-stat">1,000+ Cataract Extractions</div>
-                    <span class="watch-link" style="margin-top: 1.5rem; display: inline-block;">▶ Watch Philanthropy Story</span>
+                    <span class="watch-link" style="margin-top: 1.5rem; display: inline-block;">▶ Watch Sight Restoration Mission</span>
                 </div>
             </div>
 
+            <!-- SECTION 2: CREATOR-LED CHARITABLE INITIATIVES -->
             <div class="impact-section-header" style="margin-top: 7rem;">
                 <h2 class="section-title" style="font-size: 2.5rem;">CREATOR-LED CHARITABLE INITIATIVES</h2>
                 <p class="section-subtitle">
@@ -261,7 +280,7 @@
             </div>
 
             <div class="impact-duo-grid">
-                <div class="impact-wide-card" onclick="openVideoModal('TeamTrees Initiative', '0e3GPea1Tyg')">
+                <div class="impact-wide-card" onclick="openVideoModal('Planting 20 Million Trees (#TeamTrees)', 'GYh5mYtAax4')">
                     <div class="iwc-top">
                         <div class="iwc-icon">🌳</div>
                         <span class="iwc-date">EST. OCTOBER 2019</span>
@@ -275,7 +294,7 @@
                     <span class="watch-link" style="margin-top: 1.5rem; display: inline-block;">▶ Watch TeamTrees Documentary</span>
                 </div>
 
-                <div class="impact-wide-card" onclick="openVideoModal('TeamSeas Initiative', 'gyLqpnfZwbo')">
+                <div class="impact-wide-card" onclick="openVideoModal('I Built 100 Wells In Africa', 'aSQUg-h8G4s')">
                     <div class="iwc-top">
                         <div class="iwc-icon">🌊</div>
                         <span class="iwc-date">EST. OCTOBER 2021</span>
@@ -290,6 +309,7 @@
                 </div>
             </div>
 
+            <!-- SECTION 3: FOOD AND BUSINESS VENTURES -->
             <div class="impact-section-header" style="margin-top: 7rem;">
                 <div class="badge-pill">● ETHICAL COMMERCE</div>
                 <h2 class="section-title" style="font-size: 2.5rem;">FOOD AND BUSINESS VENTURES</h2>
@@ -298,7 +318,7 @@
                 </p>
             </div>
 
-            <div class="impact-business-banner" onclick="openVideoModal('Feastables Supply Chain', 'TJ2atwkmkT0')">
+            <div class="impact-business-banner" onclick="openVideoModal('1,000 Blind People See For The First Time', 'TJ2atwkmkT0')">
                 <div class="ibb-left">
                     <h3>FEASTABLES & RESPONSIBLE SOURCING</h3>
                     <p>Unlike legacy confectionery giants using artificial preservatives and complex additives, Jimmy designed Feastables with grass-fed dairy, simple cane sugars, and ethically verified cocoa farms.</p>
@@ -322,6 +342,7 @@
         </div>
     </section>
 
+    <!-- VIEW 4: COMMUNITY & SUBMISSION FORM -->
     <section id="community-view" class="view-section">
         <div class="container" style="max-width: 650px;">
             <div class="section-header" style="justify-content: center; text-align: center;">
@@ -355,6 +376,7 @@
         </div>
     </section>
 
+    <!-- VIDEO MODAL POPUP -->
     <div id="videoModal" class="modal-overlay">
         <div class="modal-content">
             <button class="modal-close" onclick="closeVideoModal()">×</button>
@@ -365,6 +387,7 @@
         </div>
     </div>
 
+    <!-- Footer -->
     <footer>
         <div class="footer-container">
             <p>© 2026 Beast Hub Unofficial Fan Portal. Built with passion.</p>
@@ -377,6 +400,7 @@
         </div>
     </footer>
 
+    <!-- JavaScript Script -->
     <script src="script.js"></script>
 </body>
 </html>
