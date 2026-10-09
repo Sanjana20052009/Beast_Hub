@@ -70,14 +70,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// Video Modal Functions with Autoplay support
-function openVideoModal(title, videoUrl) {
+// Video Modal Functions with Precise Video ID Routing
+function openVideoModal(title, videoId) {
     const modal = document.getElementById('videoModal');
     const modalTitle = document.getElementById('modalTitle');
     const modalIframe = document.getElementById('modalIframe');
 
     modalTitle.textContent = title;
-    modalIframe.src = videoUrl + "?autoplay=1";
+    modalIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
     modal.classList.add('active');
 }
 

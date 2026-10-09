@@ -4,16 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beast Hub | Unofficial Fan Portal & Archive</title>
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header & Navbar -->
     <header>
         <div class="nav-container">
             <a href="#" class="logo" data-target="home">
@@ -35,11 +32,7 @@
         </div>
     </header>
 
-    <!-- MAIN CONTENT VIEWS -->
-
-    <!-- VIEW 1: HOME -->
     <section id="home-view" class="view-section active">
-        <!-- Hero Section -->
         <div class="hero">
             <div class="hero-badge">
                 🔥 UNOFFICIAL FAN PORTAL & ARCHIVE | EST. 2012–PRESENT
@@ -52,7 +45,6 @@
             </div>
         </div>
 
-        <!-- Stats Bar -->
         <div class="stats-wrapper">
             <div class="stats-container">
                 <div class="stat-box">
@@ -78,63 +70,34 @@
             </div>
         </div>
 
-        <!-- The Story So Far Section -->
         <div class="story-section">
-            <div class="badge-pill">● ORIGIN & EVOLUTION</div>
-            <h2 class="section-title">THE STORY SO FAR</h2>
-            <p class="section-subtitle">From an unassuming bedroom in Greenville, North Carolina to commanding the largest digital entertainment operation on earth.</p>
-            
-            <div class="story-grid">
-                <div class="story-text">
-                    <p>In 2012, at age 13, <strong>Jimmy Donaldson</strong> uploaded his first gaming clip to YouTube under the moniker <em>MrBeast6000</em>. Unlike creators who chased fleeting trends, Jimmy treated the platform as an algorithmic puzzle to be decoded. He spent day and night deconstructing retention graphs, thumbnail psychology, and storytelling pacing.</p>
-                    <p>His defining breakthrough came in 2017 when he counted to 100,000 in a grueling 44-hour session. That raw human determination proved that radical dedication and unscripted endurance could captivate millions without traditional television gatekeepers.</p>
-                    <p>Instead of keeping brand sponsorships, Jimmy pioneered an unprecedented financial model: <strong>reinvesting 100% of revenue</strong> into higher production values, grander sets, and life-changing giveaways. This flywheel transformed his channel from internet curiosity into an international cultural force.</p>
-                    <div style="margin-top: 2rem;">
-                        <button class="btn btn-ghost" data-target="journey">READ THE FULL TIMELINE →</button>
-                    </div>
-                </div>
-                <div class="quote-card">
-                    <div class="quote-icon">🔥</div>
-                    <div class="quote-tag">CORE PHILOSOPHY</div>
-                    <h3>“I WANT TO MAKE THE BEST VIDEOS POSSIBLE.”</h3>
-                    <ul class="quote-list">
-                        <li><span>✓</span> Relentless iteration on video hooks and narrative pacing.</li>
-                        <li><span>✓</span> Total economic reinvestment back into physical spectacle.</li>
-                        <li><span>✓</span> Converting viral velocity into enduring philanthropic value.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Built Different Section -->
-        <div class="story-section" style="border-top: 1px solid var(--border-color); padding-top: 6rem;">
             <div class="badge-pill">● VERIFIED HIGHLIGHTS</div>
             <h2 class="section-title">BUILT DIFFERENT</h2>
             <p class="section-subtitle">Verified achievements spanning digital entertainment, global media production, physical consumer brands, and international charity.</p>
 
             <div class="highlights-grid">
-                <div class="highlight-card" onclick="openVideoModal('Most Subscribed Creator', 'https://www.youtube.com/embed/0e3GPea1Tyg')">
+                <div class="highlight-card" onclick="openVideoModal('Most Subscribed Creator', '0e3GPea1Tyg')">
                     <div class="h-icon">📺</div>
                     <div class="h-category">ENTERTAINMENT</div>
                     <h3>#1 Most Subscribed</h3>
                     <p>Surpassed T-Series to become the single most subscribed YouTube channel in history, with over 300 million main-channel subscribers and 70+ billion views.</p>
                     <span class="watch-link">▶ Watch Feature</span>
                 </div>
-                <div class="highlight-card" onclick="openVideoModal('Beast Games Amazon Prime', 'https://www.youtube.com/embed/gyLqpnfZwbo')">
+                <div class="highlight-card" onclick="openVideoModal('Beast Games Amazon Prime', 'gyLqpnfZwbo')">
                     <div class="h-icon">🏆</div>
                     <div class="h-category">HOLLYWOOD BUDGETS</div>
                     <h3>Beast Games</h3>
                     <p>Created Beast Games with Amazon Prime Video, assembling 1,000 contestants competing for a $5,000,000 cash prize—the biggest prize in reality show history.</p>
                     <span class="watch-link">▶ Watch Feature</span>
                 </div>
-                <div class="highlight-card" onclick="openVideoModal('Feastables CPG Launch', 'https://www.youtube.com/embed/TJ2atwkmkT0')">
+                <div class="highlight-card" onclick="openVideoModal('Feastables CPG Launch', 'TJ2atwkmkT0')">
                     <div class="h-icon">📦</div>
                     <div class="h-category">BUSINESS VENTURES</div>
                     <h3>Feastables CPG</h3>
                     <p>Disrupted mass-market snacking by launching Feastables chocolate with ethically sourced cocoa, stocked in over 50,000 stores across North America and Europe.</p>
                     <span class="watch-link">▶ Watch Feature</span>
                 </div>
-                <div class="highlight-card" onclick="openVideoModal('Beast Philanthropy Mission', 'https://www.youtube.com/embed/0e3GPea1Tyg')">
+                <div class="highlight-card" onclick="openVideoModal('Beast Philanthropy Mission', '0e3GPea1Tyg')">
                     <div class="h-icon">🌍</div>
                     <div class="h-category">GLOBAL INITIATIVES</div>
                     <h3>Beast Philanthropy</h3>
@@ -143,42 +106,8 @@
                 </div>
             </div>
         </div>
-
-        <!-- More Than Entertainment Section -->
-        <div class="story-section" style="border-top: 1px solid var(--border-color); padding-top: 6rem;">
-            <div class="badge-pill" style="color: #10b981; background: rgba(16, 185, 129, 0.1); border-color: rgba(16, 185, 129, 0.2);">♥ HUMANITARIAN MISSION</div>
-            <h2 class="section-title">MORE THAN ENTERTAINMENT.</h2>
-            <p class="section-subtitle">While stunts grab headlines, Jimmy's true legacy is leveraging audience attention into verified, systemic change. Beast Philanthropy maintains audited food-distribution facilities, finances community water boreholes, funds sight-restoring surgeries, and rallies creator coalitions to tackle environmental crises.</p>
-            
-            <div class="impact-preview-grid">
-                <div class="impact-mini-card" onclick="openVideoModal('Building 100 Wells in Africa', 'https://www.youtube.com/embed/gyLqpnfZwbo')">
-                    <div class="im-tag">CLEAN WATER</div>
-                    <h3>100+ Wells</h3>
-                    <p>Providing fresh drinking water across multiple African nations.</p>
-                    <span class="watch-link" style="margin-top: 1rem; display: inline-block;">▶ Watch Mission</span>
-                </div>
-                <div class="impact-mini-card" onclick="openVideoModal('1,000 Blind People See', 'https://www.youtube.com/embed/TJ2atwkmkT0')">
-                    <div class="im-tag">SURGICAL ACCESS</div>
-                    <h3>1,000+ Surgeries</h3>
-                    <p>Curing preventable blindness by funding cataract extractions.</p>
-                    <span class="watch-link" style="margin-top: 1rem; display: inline-block;">▶ Watch Mission</span>
-                </div>
-            </div>
-            <div style="text-align: center; margin-top: 2.5rem;">
-                <button class="btn btn-primary" data-target="impact">EXPLORE IMPACT BREAKDOWN →</button>
-            </div>
-        </div>
-
-        <!-- Community Callout Section -->
-        <div class="community-callout">
-            <div class="badge-pill">● COMMUNITY CREATIVE FORUM</div>
-            <h2>YOUR IDEA COULD BE NEXT.</h2>
-            <p>Have an ambitious challenge, extreme survival concept, or innovative giveback proposal? Submit your concept directly to BEAST HUB's real backend. Every pitch is validated and securely stored.</p>
-            <button class="btn btn-primary" data-target="community" style="margin-top: 1.5rem; padding: 1rem 2rem; font-size: 1rem;">OPEN SUBMISSION FORM →</button>
-        </div>
     </section>
 
-    <!-- VIEW 2: JOURNEY -->
     <section id="journey-view" class="view-section">
         <div class="journey-header-container">
             <div class="badge-pill">🕒 VERIFIED CHRONICLE (2012 – PRESENT)</div>
@@ -190,22 +119,18 @@
                 🛡️ All dates, milestones, and achievements are verified from official public releases and documentary records.
             </div>
 
-            <!-- Filter Buttons -->
             <div class="timeline-filters">
                 <button class="filter-btn active" data-filter="all">ALL</button>
                 <button class="filter-btn" data-filter="early">EARLY DAYS</button>
                 <button class="filter-btn" data-filter="viral">VIRAL GROWTH</button>
                 <button class="filter-btn" data-filter="philanthropy">PHILANTHROPY</button>
-                <button class="filter-btn" data-filter="business">BUSINESS</button>
                 <button class="filter-btn" data-filter="mega">MEGA PRODUCTION</button>
             </div>
         </div>
 
-        <!-- Vertical Timeline Section -->
         <div class="timeline-container">
             <div class="timeline-line"></div>
 
-            <!-- Milestone 1 -->
             <div class="timeline-row" data-category="early">
                 <div class="timeline-content-left">
                     <div class="milestone-badge-row">
@@ -213,16 +138,11 @@
                         <span class="m-tag">🎮 Early Days</span>
                     </div>
                     <h3>Humble Beginnings & Algorithmic Obsession</h3>
-                    <p>At age 13, Jimmy Donaldson began uploading gaming clips (Minecraft, Call of Duty) and video commentaries from his bedroom in Greenville, North Carolina under the handle "MrBeast6000". He spent thousands of hours studying thumbnail psychology, audience retention curves, and YouTube search algorithms alongside an obsessed circle of online creator peers.</p>
-                    <div class="milestone-card-box">
-                        <div class="mc-tag">✨ WHY THIS MILESTONE MATTERS</div>
-                        <p>It established the legendary obsession with pacing and retention that would later redefine creator culture globally.</p>
-                        <span class="mc-sub">Greenville, NC bedroom • Thousands of hours of pacing studies</span>
-                    </div>
+                    <p>At age 13, Jimmy Donaldson began uploading gaming clips and video commentaries from his bedroom in Greenville, North Carolina under the handle "MrBeast6000". He spent thousands of hours studying thumbnail psychology, audience retention curves, and YouTube search algorithms.</p>
                 </div>
                 <div class="timeline-node"><span></span></div>
                 <div class="timeline-content-right">
-                    <div class="timeline-media-card" onclick="openVideoModal('The Foundation', 'https://www.youtube.com/embed/0e3GPea1Tyg')">
+                    <div class="timeline-media-card" onclick="openVideoModal('The Foundation', '0e3GPea1Tyg')">
                         <div class="tm-tag">THE FOUNDATION</div>
                         <div class="tm-video-preview" style="background: linear-gradient(135deg, #1e293b, #0f172a);">
                             ▶ Watch Archive Video
@@ -232,10 +152,9 @@
                 </div>
             </div>
 
-            <!-- Milestone 2 -->
             <div class="timeline-row" data-category="viral">
                 <div class="timeline-content-left">
-                    <div class="timeline-media-card" onclick="openVideoModal('Counting to 100,000', 'https://www.youtube.com/embed/0e3GPea1Tyg')">
+                    <div class="timeline-media-card" onclick="openVideoModal('Counting to 100,000', 'gyLqpnfZwbo')">
                         <div class="tm-tag">VIRAL TURNING POINT</div>
                         <div class="tm-video-preview" style="background: linear-gradient(135deg, #334155, #1e293b);">
                             ▶ Watch Archive Video
@@ -250,16 +169,10 @@
                         <span class="m-tag">🏆 Viral Growth</span>
                     </div>
                     <h3>Counting to 100,000 — The Endurance Breakthrough</h3>
-                    <p>Jimmy spent over 40 exhausting hours counting aloud from 1 to 100,000 in a single unyielding video. The sheer absurdity, relentless discipline, and raw human endurance captivated the internet, generating millions of views and inaugurating a new genre of extreme stunt endurance content.</p>
-                    <div class="milestone-card-box">
-                        <div class="mc-tag">✨ WHY THIS MILESTONE MATTERS</div>
-                        <p>It proved that raw dedication and sheer commitment could break through YouTube algorithms without traditional studio budgets.</p>
-                        <span class="mc-sub">44+ Hours Recorded • Sparked viral endurance genre</span>
-                    </div>
+                    <p>Jimmy spent over 40 exhausting hours counting aloud from 1 to 100,000 in a single unyielding video. The sheer absurdity, relentless discipline, and raw human endurance captivated the internet.</p>
                 </div>
             </div>
 
-            <!-- Milestone 3 -->
             <div class="timeline-row" data-category="philanthropy">
                 <div class="timeline-content-left">
                     <div class="milestone-badge-row">
@@ -267,16 +180,11 @@
                         <span class="m-tag">♥ Philanthropy</span>
                     </div>
                     <h3>Giving Away Money & The Reinvestment Flywheel</h3>
-                    <p>When Jimmy received his first significant brand sponsorship ($10,000 from Quidd), rather than keeping the income, he gave every dollar to a person experiencing homelessness. Realizing that high-stakes generosity generated far higher viewership than flashy materialism, he initiated his famous flywheel: every dollar earned went right back into bigger productions.</p>
-                    <div class="milestone-card-box">
-                        <div class="mc-tag">✨ WHY THIS MILESTONE MATTERS</div>
-                        <p>Transformed creator sponsorship from personal compensation into community-giving entertainment spectacle.</p>
-                        <span class="mc-sub">$10,000 initial check • 100% video revenue reinvested</span>
-                    </div>
+                    <p>When Jimmy received his first significant brand sponsorship, rather than keeping the income, he gave every dollar away. Realizing high-stakes generosity generated higher viewership, he initiated his famous reinvestment flywheel.</p>
                 </div>
                 <div class="timeline-node"><span></span></div>
                 <div class="timeline-content-right">
-                    <div class="timeline-media-card" onclick="openVideoModal('Giving Away Money', 'https://www.youtube.com/embed/gyLqpnfZwbo')">
+                    <div class="timeline-media-card" onclick="openVideoModal('Giving Away Money', 'TJ2atwkmkT0')">
                         <div class="tm-tag">REINVESTMENT ERA</div>
                         <div class="tm-video-preview" style="background: linear-gradient(135deg, #1e3a8a, #1e293b);">
                             ▶ Watch Archive Video
@@ -286,10 +194,9 @@
                 </div>
             </div>
 
-            <!-- Milestone 4 -->
             <div class="timeline-row" data-category="mega">
                 <div class="timeline-content-left">
-                    <div class="timeline-media-card" onclick="openVideoModal('$456,000 Squid Game In Real Life', 'https://www.youtube.com/embed/0e3GPea1Tyg')">
+                    <div class="timeline-media-card" onclick="openVideoModal('$456,000 Squid Game In Real Life', '0e3GPea1Tyg')">
                         <div class="tm-tag">HISTORIC MASTERPIECE</div>
                         <div class="tm-video-preview" style="background: linear-gradient(135deg, #78350f, #1e293b);">
                             ▶ Watch Archive Video
@@ -304,56 +211,48 @@
                         <span class="m-tag">🎬 Mega Production</span>
                     </div>
                     <h3>$456,000 Squid Game In Real Life</h3>
-                    <p>At a cost of over $3.5 million, Jimmy and his team built full-scale physical replicas of every set from Netflix's viral drama Squid Game, casting 456 contestants to compete in safe, non-lethal playground challenges for a $456,000 prize. The video garnered over 100 million views within just a few days.</p>
-                    <div class="milestone-card-box">
-                        <div class="mc-tag">✨ WHY THIS MILESTONE MATTERS</div>
-                        <p>Marked the moment online video production quality and budget parity fully matched and surpassed broadcast television.</p>
-                        <span class="mc-sub">$3.5M Production Cost • 600M+ Views to date</span>
-                    </div>
+                    <p>At a cost of over $3.5 million, Jimmy and his team built full-scale physical replicas of every set from Netflix's viral drama Squid Game, casting 456 contestants to compete in safe challenges.</p>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <!-- VIEW 3: IMPACT (Redesigned matching reference screenshots) -->
     <section id="impact-view" class="view-section">
         <div class="container" style="max-width: 1200px;">
             
-            <!-- SECTION 1: BEAST PHILANTHROPY -->
             <div class="impact-section-header">
                 <div class="badge-pill">● 501(C)(3) INSTITUTION</div>
                 <h2 class="section-title" style="font-size: 3rem;">BEAST PHILANTHROPY</h2>
                 <p class="section-subtitle">
-                    Formally established in 2020, Beast Philanthropy exists as an independent, audited nonprofit using 100% of its video revenue, merchandise profits, and donor contributions toward humanitarian relief.
+                    Formally established in 2020, Beast Philanthropy exists as an independent, audited nonprofit using 100% of its video revenue and donor contributions toward humanitarian relief.
                 </p>
             </div>
 
             <div class="impact-cards-grid">
-                <div class="impact-big-card" onclick="openVideoModal('Mobile Food Pantries', 'https://www.youtube.com/embed/0e3GPea1Tyg')">
+                <div class="impact-big-card" onclick="openVideoModal('Mobile Food Pantries', '0e3GPea1Tyg')">
                     <div class="ibc-icon">🍏</div>
                     <h3>Mobile Food Pantries</h3>
-                    <p>Operating a 50,000-square-foot fulfillment warehouse in Greenville, NC, distributing millions of pounds of fresh produce, meat, and shelf-stable goods to underserved communities throughout North Carolina.</p>
+                    <p>Operating a 50,000-square-foot fulfillment warehouse in Greenville, NC, distributing millions of pounds of fresh produce and goods to underserved communities.</p>
                     <div class="ibc-stat">50M+ Meals Provided</div>
                     <span class="watch-link" style="margin-top: 1.5rem; display: inline-block;">▶ Watch Philanthropy Story</span>
                 </div>
-                <div class="impact-big-card" onclick="openVideoModal('Clean Water Wells', 'https://www.youtube.com/embed/gyLqpnfZwbo')">
+                <div class="impact-big-card" onclick="openVideoModal('Clean Water Wells', 'gyLqpnfZwbo')">
                     <div class="ibc-icon">💧</div>
                     <h3>Clean Water Wells</h3>
-                    <p>Funded and constructed over 100 solar-powered deep boreholes in rural villages across Kenya, Cameroon, and Uganda, eliminating multi-mile treks for contaminated surface water.</p>
+                    <p>Funded and constructed over 100 solar-powered deep boreholes in rural villages across Kenya, Cameroon, and Uganda, eliminating multi-mile treks for contaminated water.</p>
                     <div class="ibc-stat">100+ Solar Boreholes Built</div>
                     <span class="watch-link" style="margin-top: 1.5rem; display: inline-block;">▶ Watch Philanthropy Story</span>
                 </div>
-                <div class="impact-big-card" onclick="openVideoModal('Preventable Blindness Surgeries', 'https://www.youtube.com/embed/TJ2atwkmkT0')">
+                <div class="impact-big-card" onclick="openVideoModal('Preventable Blindness Surgeries', 'TJ2atwkmkT0')">
                     <div class="ibc-icon">👁️</div>
                     <h3>Preventable Blindness Surgeries</h3>
-                    <p>Collaborated with nonprofit surgical clinics worldwide to sponsor 10-minute cataract removal operations for patients unable to afford routine ophthalmologic care.</p>
+                    <p>Collaborated with nonprofit surgical clinics worldwide to sponsor 10-minute cataract removal operations for patients unable to afford routine eye care.</p>
                     <div class="ibc-stat">1,000+ Cataract Extractions</div>
                     <span class="watch-link" style="margin-top: 1.5rem; display: inline-block;">▶ Watch Philanthropy Story</span>
                 </div>
             </div>
 
-            <!-- SECTION 2: CREATOR-LED CHARITABLE INITIATIVES -->
             <div class="impact-section-header" style="margin-top: 7rem;">
                 <h2 class="section-title" style="font-size: 2.5rem;">CREATOR-LED CHARITABLE INITIATIVES</h2>
                 <p class="section-subtitle">
@@ -362,36 +261,35 @@
             </div>
 
             <div class="impact-duo-grid">
-                <div class="impact-wide-card" onclick="openVideoModal('TeamTrees Initiative', 'https://www.youtube.com/embed/0e3GPea1Tyg')">
+                <div class="impact-wide-card" onclick="openVideoModal('TeamTrees Initiative', '0e3GPea1Tyg')">
                     <div class="iwc-top">
                         <div class="iwc-icon">🌳</div>
                         <span class="iwc-date">EST. OCTOBER 2019</span>
                     </div>
                     <h3>#TEAMTREES</h3>
                     <div class="iwc-highlight">20 Million Trees Planted</div>
-                    <p>Launched alongside Mark Rober and the Arbor Day Foundation, #TeamTrees set a goal to raise $20 million ($1 = 1 tree). Tens of thousands of creators uploaded simultaneous videos with zero monetization competition, reaching the 20-million tree milestone in under 60 days. Trees have been planted across every continent except Antarctica.</p>
+                    <p>Launched alongside Mark Rober and the Arbor Day Foundation, #TeamTrees set a goal to raise $20 million ($1 = 1 tree). Tens of thousands of creators uploaded simultaneous videos with zero monetization competition.</p>
                     <div class="partner-box">
-                        <strong>Key Partners:</strong> Arbor Day Foundation, US Forest Service, international forestry organizations.
+                        <strong>Key Partners:</strong> Arbor Day Foundation, US Forest Service.
                     </div>
                     <span class="watch-link" style="margin-top: 1.5rem; display: inline-block;">▶ Watch TeamTrees Documentary</span>
                 </div>
 
-                <div class="impact-wide-card" onclick="openVideoModal('TeamSeas Initiative', 'https://www.youtube.com/embed/gyLqpnfZwbo')">
+                <div class="impact-wide-card" onclick="openVideoModal('TeamSeas Initiative', 'gyLqpnfZwbo')">
                     <div class="iwc-top">
                         <div class="iwc-icon">🌊</div>
                         <span class="iwc-date">EST. OCTOBER 2021</span>
                     </div>
                     <h3>#TEAMSEAS</h3>
                     <div class="iwc-highlight">34 Million Pounds of Trash Removed</div>
-                    <p>Partnering with Ocean Conservancy and The Ocean Cleanup, #TeamSeas targeted 30 million pounds of plastic waste in global oceans, rivers, and beaches ($1 = 1 pound). The initiative funded solar-powered river Interceptors that stop floating garbage before reaching open seas, alongside community cleanup operations across 60+ countries.</p>
+                    <p>Partnering with Ocean Conservancy and The Ocean Cleanup, #TeamSeas targeted 30 million pounds of plastic waste in global oceans, rivers, and beaches ($1 = 1 pound).</p>
                     <div class="partner-box">
-                        <strong>Key Partners:</strong> The Ocean Cleanup (Boyan Slat), Ocean Conservancy, global coastal communities.
+                        <strong>Key Partners:</strong> The Ocean Cleanup (Boyan Slat), Ocean Conservancy.
                     </div>
                     <span class="watch-link" style="margin-top: 1.5rem; display: inline-block;">▶ Watch TeamSeas Documentary</span>
                 </div>
             </div>
 
-            <!-- SECTION 3: FOOD AND BUSINESS VENTURES -->
             <div class="impact-section-header" style="margin-top: 7rem;">
                 <div class="badge-pill">● ETHICAL COMMERCE</div>
                 <h2 class="section-title" style="font-size: 2.5rem;">FOOD AND BUSINESS VENTURES</h2>
@@ -400,11 +298,11 @@
                 </p>
             </div>
 
-            <div class="impact-business-banner" onclick="openVideoModal('Feastables Supply Chain', 'https://www.youtube.com/embed/TJ2atwkmkT0')">
+            <div class="impact-business-banner" onclick="openVideoModal('Feastables Supply Chain', 'TJ2atwkmkT0')">
                 <div class="ibb-left">
                     <h3>FEASTABLES & RESPONSIBLE SOURCING</h3>
                     <p>Unlike legacy confectionery giants using artificial preservatives and complex additives, Jimmy designed Feastables with grass-fed dairy, simple cane sugars, and ethically verified cocoa farms.</p>
-                    <p style="margin-top: 1rem;">The company actively works to eliminate supply chain opacity in West African cocoa harvesting, ensuring farmers receive fair compensation while bringing high-quality treats into thousands of mainstream grocery retailers worldwide.</p>
+                    <p style="margin-top: 1rem;">The company actively works to eliminate supply chain opacity in West African cocoa harvesting, ensuring farmers receive fair compensation.</p>
                     <span class="watch-link" style="margin-top: 1.5rem; display: inline-block;">▶ Watch Feastables Transparency Special</span>
                 </div>
                 <div class="ibb-right">
@@ -424,7 +322,6 @@
         </div>
     </section>
 
-    <!-- VIEW 4: COMMUNITY & SUBMISSION FORM -->
     <section id="community-view" class="view-section">
         <div class="container" style="max-width: 650px;">
             <div class="section-header" style="justify-content: center; text-align: center;">
@@ -458,7 +355,6 @@
         </div>
     </section>
 
-    <!-- VIDEO MODAL POPUP -->
     <div id="videoModal" class="modal-overlay">
         <div class="modal-content">
             <button class="modal-close" onclick="closeVideoModal()">×</button>
@@ -469,7 +365,6 @@
         </div>
     </div>
 
-    <!-- Footer -->
     <footer>
         <div class="footer-container">
             <p>© 2026 Beast Hub Unofficial Fan Portal. Built with passion.</p>
@@ -482,7 +377,6 @@
         </div>
     </footer>
 
-    <!-- JavaScript Script -->
     <script src="script.js"></script>
 </body>
 </html>
