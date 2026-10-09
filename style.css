@@ -210,27 +210,25 @@ header {
     justify-content: center;
 }
 
-/* Stats Container */
-.stats-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
+/* Stats Wrapper & Container */
+.stats-wrapper {
     max-width: 1200px;
     margin: 4rem auto;
     padding: 0 2rem;
 }
 
-.stat-box {
+.stats-container {
     background: var(--surface-color);
     border: 1px solid var(--border-color);
-    padding: 2rem 1.5rem;
-    border-radius: 12px;
-    transition: transform 0.25s ease, border-color 0.25s ease;
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
 }
 
-.stat-box:hover {
-    transform: translateY(-4px);
-    border-color: rgba(245, 158, 11, 0.4);
+.stat-box {
+    text-align: left;
 }
 
 .stat-label {
