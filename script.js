@@ -24,12 +24,32 @@ document.addEventListener('DOMContentLoaded', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    // Attach click events to all buttons and nav links with data-target
     navItems.forEach(item => {
         item.addEventListener('click', (e) => {
             e.preventDefault();
             const targetId = item.getAttribute('data-target');
             switchView(targetId);
+        });
+    });
+
+    // Timeline Filter Buttons Logic
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const timelineRows = document.querySelectorAll('.timeline-row');
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            const filter = btn.getAttribute('data-filter');
+
+            timelineRows.forEach(row => {
+                if (filter === 'all' || row.getAttribute('data-category') === filter) {
+                    row.style.display = 'grid';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
         });
     });
 

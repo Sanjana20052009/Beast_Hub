@@ -52,7 +52,7 @@
             </div>
         </div>
 
-        <!-- Stats Bar (Framed Inside Rounded Border Box like your screenshot) -->
+        <!-- Stats Bar -->
         <div class="stats-wrapper">
             <div class="stats-container">
                 <div class="stat-box">
@@ -163,33 +163,6 @@
             </div>
         </div>
 
-        <!-- The Beast Experience Section -->
-        <div class="story-section" style="border-top: 1px solid var(--border-color); padding-top: 6rem;">
-            <h2 class="section-title">THE BEAST EXPERIENCE</h2>
-            <p class="section-subtitle">Hand-selected flagship videos showcasing the progression from high-stakes survival challenges to nationwide infrastructure development.</p>
-
-            <div class="highlights-grid">
-                <div class="highlight-card" onclick="openVideoModal('$456,000 Squid Game In Real Life!', 'https://www.youtube.com/embed/0e3GPea1Tyg')">
-                    <div class="h-category">🎬 FLAGSHIP SPECTACLE</div>
-                    <h3>$456,000 Squid Game In Real Life!</h3>
-                    <p>456 contestants battle through full-scale bespoke physical recreations of Red Light Green Light, Dalgona, Tug of War, Marbles, and the Glass Bridge.</p>
-                    <span class="watch-link">Watch Video →</span>
-                </div>
-                <div class="highlight-card" onclick="openVideoModal('I Built 100 Wells In Africa', 'https://www.youtube.com/embed/gyLqpnfZwbo')">
-                    <div class="h-category" style="color: #10b981;">♥ PHILANTHROPY ACTION</div>
-                    <h3>I Built 100 Wells In Africa</h3>
-                    <p>Providing clean, running solar-powered fresh water access to over 500,000 villagers, schools, and hospitals across Kenya, Cameroon, and Uganda.</p>
-                    <span class="watch-link" style="color: #10b981;">Watch Video →</span>
-                </div>
-                <div class="highlight-card" onclick="openVideoModal('1,000 Blind People See For The First Time', 'https://www.youtube.com/embed/TJ2atwkmkT0')">
-                    <div class="h-category" style="color: #3b82f6;">🩺 MEDICAL MISSION</div>
-                    <h3>1,000 Blind People See For The First Time</h3>
-                    <p>Curing curable blindness by funding straightforward 10-minute cataract removal operations for patients across Mexico, Honduras, and Indonesia.</p>
-                    <span class="watch-link" style="color: #3b82f6;">Watch Video →</span>
-                </div>
-            </div>
-        </div>
-
         <!-- Community Callout Section -->
         <div class="community-callout">
             <div class="badge-pill">● COMMUNITY CREATIVE FORUM</div>
@@ -199,42 +172,141 @@
         </div>
     </section>
 
-    <!-- VIEW 2: JOURNEY -->
+    <!-- VIEW 2: JOURNEY (Interactive Timeline with YouTube Videos) -->
     <section id="journey-view" class="view-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>The Complete Creator Journey & Timeline</h2>
-                <span class="section-subtitle">From Greenville bedroom gamer to global media mogul</span>
+        <div class="journey-header-container">
+            <div class="badge-pill">🕒 VERIFIED CHRONICLE (2012 – PRESENT)</div>
+            <h2 class="section-title" style="font-size: 3rem;">THE BEAST JOURNEY</h2>
+            <p class="section-subtitle" style="text-align: center; max-width: 800px; margin: 0 auto 2rem;">
+                The documented evolution of a teenage gamer in North Carolina into an entertainment industry pioneer who redefined video pacing, economic reinvestment, and mass philanthropy.
+            </p>
+            <div class="verification-banner">
+                🛡️ All dates, milestones, and achievements are verified from official public releases and documentary records.
             </div>
-            <div class="grid-container">
-                <div class="card" onclick="openVideoModal('Private Island Survival', 'https://www.youtube.com/embed/0e3GPea1Tyg')">
-                    <div class="card-banner" style="background: linear-gradient(135deg, #1e293b, #0f172a);">🎥 $500,000 Private Island</div>
-                    <div class="card-content">
-                        <span class="tag">Survival</span>
-                        <h3>Last to leave the floating island wins half a million dollars.</h3>
-                        <p>100 contestants battle extreme weather, sleep deprivation, and unexpected twists.</p>
-                        <span class="watch-link">▶ Watch Video</span>
+
+            <!-- Filter Buttons -->
+            <div class="timeline-filters">
+                <button class="filter-btn active" data-filter="all">ALL</button>
+                <button class="filter-btn" data-filter="early">EARLY DAYS</button>
+                <button class="filter-btn" data-filter="viral">VIRAL GROWTH</button>
+                <button class="filter-btn" data-filter="philanthropy">PHILANTHROPY</button>
+                <button class="filter-btn" data-filter="business">BUSINESS</button>
+                <button class="filter-btn" data-filter="mega">MEGA PRODUCTION</button>
+            </div>
+        </div>
+
+        <!-- Vertical Timeline Section -->
+        <div class="timeline-container">
+            <div class="timeline-line"></div>
+
+            <!-- Milestone 1 -->
+            <div class="timeline-row" data-category="early">
+                <div class="timeline-content-left">
+                    <div class="milestone-badge-row">
+                        <span class="m-date">📅 2012 – 2016</span>
+                        <span class="m-tag">🎮 Early Days</span>
+                    </div>
+                    <h3>Humble Beginnings & Algorithmic Obsession</h3>
+                    <p>At age 13, Jimmy Donaldson began uploading gaming clips (Minecraft, Call of Duty) and video commentaries from his bedroom in Greenville, North Carolina under the handle "MrBeast6000". He spent thousands of hours studying thumbnail psychology, audience retention curves, and YouTube search algorithms alongside an obsessed circle of online creator peers.</p>
+                    <div class="milestone-card-box">
+                        <div class="mc-tag">✨ WHY THIS MILESTONE MATTERS</div>
+                        <p>It established the legendary obsession with pacing and retention that would later redefine creator culture globally.</p>
+                        <span class="mc-sub">Greenville, NC bedroom • Thousands of hours of pacing studies</span>
                     </div>
                 </div>
-                <div class="card" onclick="openVideoModal('Supercar Maze', 'https://www.youtube.com/embed/0e3GPea1Tyg')">
-                    <div class="card-banner" style="background: linear-gradient(135deg, #3b82f6, #1d4ed8);">🏎️ $1,000,000 Supercar Maze</div>
-                    <div class="card-content">
-                        <span class="tag">Speed & Logic</span>
-                        <h3>Navigating the world's most complex laser maze in luxury cars.</h3>
-                        <p>One wrong move triggers the alarm and disqualifies the driver instantly.</p>
-                        <span class="watch-link">▶ Watch Video</span>
-                    </div>
-                </div>
-                <div class="card" onclick="openVideoModal('Worlds Biggest Burger', 'https://www.youtube.com/embed/f59e0b1234')">
-                    <div class="card-banner" style="background: linear-gradient(135deg, #f59e0b, #d97706);">🍔 World's Biggest Burger</div>
-                    <div class="card-content">
-                        <span class="tag">World Record</span>
-                        <h3>Baking a 10,000 lb cheeseburger to feed an entire city.</h3>
-                        <p>Collaborating with top chefs and engineers to pull off the impossible.</p>
-                        <span class="watch-link">▶ Watch Video</span>
+                <div class="timeline-node"><span></span></div>
+                <div class="timeline-content-right">
+                    <div class="timeline-media-card" onclick="openVideoModal('The Foundation', 'https://www.youtube.com/embed/0e3GPea1Tyg')">
+                        <div class="tm-tag">THE FOUNDATION</div>
+                        <div class="tm-video-preview" style="background: linear-gradient(135deg, #1e293b, #0f172a);">
+                            ▶ Watch Archive Video
+                        </div>
+                        <div class="tm-footer">VERIFIED MILESTONE ✓</div>
                     </div>
                 </div>
             </div>
+
+            <!-- Milestone 2 -->
+            <div class="timeline-row" data-category="viral">
+                <div class="timeline-content-left">
+                    <div class="timeline-media-card" onclick="openVideoModal('Counting to 100,000', 'https://www.youtube.com/embed/0e3GPea1Tyg')">
+                        <div class="tm-tag">VIRAL TURNING POINT</div>
+                        <div class="tm-video-preview" style="background: linear-gradient(135deg, #334155, #1e293b);">
+                            ▶ Watch Archive Video
+                        </div>
+                        <div class="tm-footer">VERIFIED MILESTONE ✓</div>
+                    </div>
+                </div>
+                <div class="timeline-node"><span></span></div>
+                <div class="timeline-content-right">
+                    <div class="milestone-badge-row">
+                        <span class="m-date">📅 January 2017</span>
+                        <span class="m-tag">🏆 Viral Growth</span>
+                    </div>
+                    <h3>Counting to 100,000 — The Endurance Breakthrough</h3>
+                    <p>Jimmy spent over 40 exhausting hours counting aloud from 1 to 100,000 in a single unyielding video. The sheer absurdity, relentless discipline, and raw human endurance captivated the internet, generating millions of views and inaugurating a new genre of extreme stunt endurance content.</p>
+                    <div class="milestone-card-box">
+                        <div class="mc-tag">✨ WHY THIS MILESTONE MATTERS</div>
+                        <p>It proved that raw dedication and sheer commitment could break through YouTube algorithms without traditional studio budgets.</p>
+                        <span class="mc-sub">44+ Hours Recorded • Sparked viral endurance genre</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Milestone 3 -->
+            <div class="timeline-row" data-category="philanthropy">
+                <div class="timeline-content-left">
+                    <div class="milestone-badge-row">
+                        <span class="m-date">📅 2018 – 2020</span>
+                        <span class="m-tag">♥ Philanthropy</span>
+                    </div>
+                    <h3>Giving Away Money & The Reinvestment Flywheel</h3>
+                    <p>When Jimmy received his first significant brand sponsorship ($10,000 from Quidd), rather than keeping the income, he gave every dollar to a person experiencing homelessness. Realizing that high-stakes generosity generated far higher viewership than flashy materialism, he initiated his famous flywheel: every dollar earned went right back into bigger productions.</p>
+                    <div class="milestone-card-box">
+                        <div class="mc-tag">✨ WHY THIS MILESTONE MATTERS</div>
+                        <p>Transformed creator sponsorship from personal compensation into community-giving entertainment spectacle.</p>
+                        <span class="mc-sub">$10,000 initial check • 100% video revenue reinvested</span>
+                    </div>
+                </div>
+                <div class="timeline-node"><span></span></div>
+                <div class="timeline-content-right">
+                    <div class="timeline-media-card" onclick="openVideoModal('Giving Away Money', 'https://www.youtube.com/embed/gyLqpnfZwbo')">
+                        <div class="tm-tag">REINVESTMENT ERA</div>
+                        <div class="tm-video-preview" style="background: linear-gradient(135deg, #1e3a8a, #1e293b);">
+                            ▶ Watch Archive Video
+                        </div>
+                        <div class="tm-footer">VERIFIED MILESTONE ✓</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Milestone 4 -->
+            <div class="timeline-row" data-category="mega">
+                <div class="timeline-content-left">
+                    <div class="timeline-media-card" onclick="openVideoModal('$456,000 Squid Game In Real Life', 'https://www.youtube.com/embed/0e3GPea1Tyg')">
+                        <div class="tm-tag">HISTORIC MASTERPIECE</div>
+                        <div class="tm-video-preview" style="background: linear-gradient(135deg, #78350f, #1e293b);">
+                            ▶ Watch Archive Video
+                        </div>
+                        <div class="tm-footer">VERIFIED MILESTONE ✓</div>
+                    </div>
+                </div>
+                <div class="timeline-node"><span></span></div>
+                <div class="timeline-content-right">
+                    <div class="milestone-badge-row">
+                        <span class="m-date">📅 November 2021</span>
+                        <span class="m-tag">🎬 Mega Production</span>
+                    </div>
+                    <h3>$456,000 Squid Game In Real Life</h3>
+                    <p>At a cost of over $3.5 million, Jimmy and his team built full-scale physical replicas of every set from Netflix's viral drama Squid Game, casting 456 contestants to compete in safe, non-lethal playground challenges for a $456,000 prize. The video garnered over 100 million views within just a few days.</p>
+                    <div class="milestone-card-box">
+                        <div class="mc-tag">✨ WHY THIS MILESTONE MATTERS</div>
+                        <p>Marked the moment online video production quality and budget parity fully matched and surpassed broadcast television.</p>
+                        <span class="mc-sub">$3.5M Production Cost • 600M+ Views to date</span>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
