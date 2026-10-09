@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beast Hub | Challenges, Creator Hub & Submissions</title>
+    <title>Beast Hub | Unofficial Fan Portal & Archive</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,17 +17,18 @@
     <header>
         <div class="nav-container">
             <a href="#" class="logo" data-target="home">
-                <div class="logo-icon">B</div>
-                Beast Hub<span>Pro</span>
+                <div class="logo-icon">⚡</div>
+                BEAST HUB
+                <small class="logo-sub">UNOFFICIAL FAN PORTAL</small>
             </a>
             <ul class="nav-links">
-                <li><a href="#" class="nav-item active" data-target="home">Home</a></li>
-                <li><a href="#" class="nav-item" data-target="explore">Explore</a></li>
-                <li><a href="#" class="nav-item" data-target="challenges">Challenges</a></li>
-                <li><a href="#" class="nav-item" data-target="submit">Submit Challenge</a></li>
+                <li><a href="#" class="nav-item active" data-target="home">HOME</a></li>
+                <li><a href="#" class="nav-item" data-target="journey">JOURNEY</a></li>
+                <li><a href="#" class="nav-item" data-target="impact">IMPACT</a></li>
+                <li><a href="#" class="nav-item" data-target="community">COMMUNITY</a></li>
             </ul>
             <div class="nav-actions">
-                <button class="btn btn-primary" data-target="submit">Join Challenge</button>
+                <button class="btn btn-primary" data-target="community">🔥 SHARE YOUR IDEA ↗</button>
             </div>
         </div>
     </header>
@@ -38,13 +39,13 @@
     <section id="home-view" class="view-section active">
         <div class="hero">
             <div class="hero-badge">
-                ⚡ The Ultimate Creator Platform & Challenge Hub
+                🔥 UNOFFICIAL FAN PORTAL & ARCHIVE | EST. 2012–PRESENT
             </div>
-            <h1>Extreme Challenges, Massive Prizes & <span>Global Creators</span></h1>
-            <p>Welcome to Beast Hub — the official arena where creators compete, fans submit legendary challenge ideas, and history is made every single day.</p>
+            <h1>BIG IDEAS.<br><span>BIGGER IMPACT.</span></h1>
+            <p>Explore the journey of a creator who transformed online entertainment through ambitious challenges, imaginative storytelling, business ventures, and philanthropic initiatives.</p>
             <div class="hero-buttons">
-                <button class="btn btn-primary" data-target="challenges">Explore Challenges</button>
-                <button class="btn btn-ghost" data-target="submit">Submit Your Idea</button>
+                <button class="btn btn-primary" data-target="journey">EXPLORE THE JOURNEY →</button>
+                <button class="btn btn-ghost" data-target="impact">DISCOVER THE IMPACT</button>
             </div>
         </div>
 
@@ -64,93 +65,93 @@
         </div>
     </section>
 
-    <!-- VIEW 2: EXPLORE -->
-    <section id="explore-view" class="view-section">
+    <!-- VIEW 2: JOURNEY -->
+    <section id="journey-view" class="view-section">
         <div class="container">
             <div class="section-header">
-                <h2>Featured Creator Vault</h2>
-                <span class="section-subtitle">Top trending videos & challenge highlights</span>
+                <h2>The Creator's Journey</h2>
+                <span class="section-subtitle">Click any challenge below to watch the featured video archive</span>
             </div>
             <div class="grid-container">
-                <div class="card">
+                <div class="card" onclick="openVideoModal('Private Island Survival', 'https://www.youtube.com/embed/dQw4w9WgXcQ')">
                     <div class="card-banner" style="background: linear-gradient(135deg, #1e293b, #0f172a);">🎥 $500,000 Private Island</div>
                     <div class="card-content">
                         <span class="tag">Survival</span>
                         <h3>Last to leave the floating island wins half a million dollars.</h3>
                         <p>100 contestants battle extreme weather, sleep deprivation, and unexpected twists.</p>
-                        <button class="btn btn-ghost" onclick="alert('Playing video preview...')">Watch Now</button>
+                        <span class="watch-link">▶ Watch Video</span>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" onclick="openVideoModal('Supercar Maze', 'https://www.youtube.com/embed/dQw4w9WgXcQ')">
                     <div class="card-banner" style="background: linear-gradient(135deg, #3b82f6, #1d4ed8);">🏎️ $1,000,000 Supercar Maze</div>
                     <div class="card-content">
                         <span class="tag">Speed & Logic</span>
                         <h3>Navigating the world's most complex laser maze in luxury cars.</h3>
                         <p>One wrong move triggers the alarm and disqualifies the driver instantly.</p>
-                        <button class="btn btn-ghost" onclick="alert('Playing video preview...')">Watch Now</button>
+                        <span class="watch-link">▶ Watch Video</span>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" onclick="openVideoModal('Worlds Biggest Burger', 'https://www.youtube.com/embed/dQw4w9WgXcQ')">
                     <div class="card-banner" style="background: linear-gradient(135deg, #f59e0b, #d97706);">🍔 World's Biggest Burger</div>
                     <div class="card-content">
                         <span class="tag">World Record</span>
                         <h3>Baking a 10,000 lb cheeseburger to feed an entire city.</h3>
                         <p>Collaborating with top chefs and engineers to pull off the impossible.</p>
-                        <button class="btn btn-ghost" onclick="alert('Playing video preview...')">Watch Now</button>
+                        <span class="watch-link">▶ Watch Video</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- VIEW 3: CHALLENGES -->
-    <section id="challenges-view" class="view-section">
+    <!-- VIEW 3: IMPACT -->
+    <section id="impact-view" class="view-section">
         <div class="container">
             <div class="section-header">
-                <h2>Active Challenges & Status</h2>
-                <span class="section-subtitle">Join or track ongoing community events</span>
+                <h2>Philanthropy & Global Impact</h2>
+                <span class="section-subtitle">Real-world community initiatives & charity milestones</span>
             </div>
             <div class="tracks-list">
-                <div class="track-item">
+                <div class="track-item" onclick="openVideoModal('1,000 Blind People', 'https://www.youtube.com/embed/dQw4w9WgXcQ')">
                     <div class="track-info">
                         <span class="track-index">01</span>
                         <div>
-                            <h4>Surviving 7 Days Inside a Nuclear Bunker</h4>
-                            <p>Status: <span style="color: var(--primary); font-weight: 600;">Active · 4 Contestants Left</span></p>
+                            <h4>Curing 1,000 People's Blindness Worldwide</h4>
+                            <p>Status: <span style="color: var(--primary); font-weight: 600;">Completed · 1,000 Surgeries Funded</span></p>
                         </div>
                     </div>
-                    <button class="btn btn-primary" onclick="alert('Viewing live stream feed!')">View Live</button>
+                    <span class="watch-link">▶ Watch Impact Story</span>
                 </div>
-                <div class="track-item">
+                <div class="track-item" onclick="openVideoModal('Planting 20 Million Trees', 'https://www.youtube.com/embed/dQw4w9WgXcQ')">
                     <div class="track-info">
                         <span class="track-index">02</span>
                         <div>
-                            <h4>I Bought The World's Most Expensive Private Jet</h4>
-                            <p>Status: <span style="color: #10b981; font-weight: 600;">Completed · Winner Announced</span></p>
+                            <h4>TeamTrees: Planting 20,000,000 Trees Globally</h4>
+                            <p>Status: <span style="color: #10b981; font-weight: 600;">Completed · Global Forest Initiative</span></p>
                         </div>
                     </div>
-                    <button class="btn btn-primary" onclick="alert('Viewing recap and winner details!')">View Recap</button>
+                    <span class="watch-link">▶ Watch Impact Story</span>
                 </div>
-                <div class="track-item">
+                <div class="track-item" onclick="openVideoModal('Building Wells in Africa', 'https://www.youtube.com/embed/dQw4w9WgXcQ')">
                     <div class="track-info">
                         <span class="track-index">03</span>
                         <div>
-                            <h4>Last to Take Hand Off $1,000,000 Cash</h4>
-                            <p>Status: <span style="color: #3b82f6; font-weight: 600;">Upcoming · Applications Open</span></p>
+                            <h4>Building 100 Fresh Water Wells in Africa</h4>
+                            <p>Status: <span style="color: #3b82f6; font-weight: 600;">Active · Clean Water Delivered</span></p>
                         </div>
                     </div>
-                    <button class="btn btn-primary" data-target="submit">Apply Now</button>
+                    <span class="watch-link">▶ Watch Impact Story</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- VIEW 4: SUBMIT CHALLENGE FORM -->
-    <section id="submit-view" class="view-section">
+    <!-- VIEW 4: COMMUNITY & SUBMIT CHALLENGE -->
+    <section id="community-view" class="view-section">
         <div class="container" style="max-width: 600px;">
             <div class="section-header" style="justify-content: center; text-align: center;">
-                <h2>Submit Your Challenge Idea</h2>
-                <span class="section-subtitle">Got an insane idea? Send it directly to the production team.</span>
+                <h2>Share Your Challenge Idea</h2>
+                <span class="section-subtitle">Got an insane idea? Send it directly to the community vault.</span>
             </div>
             <form id="challengeForm" class="form-card">
                 <div class="form-group">
@@ -167,27 +168,38 @@
                         <option>Survival & Endurance</option>
                         <option>Extreme Sports & Stunts</option>
                         <option>Cash Prize Games</option>
-                        <option>World Record Attempts</option>
+                        <option>Philanthropy & Giving Back</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label>Challenge Description & Rules</label>
                     <textarea id="challengeDesc" rows="4" required placeholder="Describe your challenge idea in detail..."></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Challenge Proposal</button>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">SUBMIT PROPOSAL ↗</button>
             </form>
         </div>
     </section>
 
+    <!-- VIDEO MODAL POPUP -->
+    <div id="videoModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeVideoModal()">×</button>
+            <h3 id="modalTitle">Video Title</h3>
+            <div class="video-container">
+                <iframe id="modalIframe" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer>
         <div class="footer-container">
-            <p>© 2026 Beast Hub Pro. All rights reserved.</p>
+            <p>© 2026 Beast Hub Unofficial Fan Portal. Built with passion.</p>
             <ul class="footer-links">
                 <li><a href="#" data-target="home">Home</a></li>
-                <li><a href="#" data-target="explore">Explore</a></li>
-                <li><a href="#" data-target="challenges">Challenges</a></li>
-                <li><a href="#" data-target="submit">Submit</a></li>
+                <li><a href="#" data-target="journey">Journey</a></li>
+                <li><a href="#" data-target="impact">Impact</a></li>
+                <li><a href="#" data-target="community">Community</a></li>
             </ul>
         </div>
     </footer>

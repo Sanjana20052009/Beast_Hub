@@ -4,18 +4,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const views = document.querySelectorAll('.view-section');
 
     function switchView(targetId) {
-        // Hide all views
         views.forEach(view => {
             view.classList.remove('active');
         });
 
-        // Show target view
         const targetView = document.getElementById(targetId + '-view');
         if (targetView) {
             targetView.classList.add('active');
         }
 
-        // Update active nav styling
         navItems.forEach(item => {
             if (item.getAttribute('data-target') === targetId) {
                 item.classList.add('active');
@@ -27,7 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    // Attach click event listeners to all elements with data-target
     navItems.forEach(item => {
         item.addEventListener('click', (e) => {
             e.preventDefault();
@@ -43,17 +39,39 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             
             const name = document.getElementById('userName').value;
-            const email = document.getElementById('userEmail').value;
             const category = document.getElementById('challengeCategory').value;
-            const description = document.getElementById('challengeDesc').value;
 
-            // Log captured data (Simulating backend submission)
-            console.log('Challenge Submission Captured:', { name, email, category, description });
-
-            alert(`🎉 Success, ${name}! Your challenge proposal has been submitted to the Beast Hub production backend.`);
+            alert(`🎉 Success, ${name}! Your challenge idea in "${category}" has been successfully submitted to the Beast Hub community vault.`);
             
             challengeForm.reset();
-            switchView('challenges');
+            switchView('journey');
         });
+    }
+});
+
+// Video Modal Functions (Global Scope)
+function openVideoModal(title, videoUrl) {
+    const modal = document.getElementById('videoModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalIframe = document.getElementById('modalIframe');
+
+    modalTitle.textContent = title;
+    modalIframe.src = videoUrl;
+    modal.classList.add('active');
+}
+
+function closeVideoModal() {
+    const modal = document.getElementById('videoModal');
+    const modalIframe = document.getElementById('modalIframe');
+
+    modalIframe.src = ''; // Stops video playback
+    modal.classList.remove('active');
+}
+
+// Close modal when clicking outside content
+window.addEventListener('click', (e) => {
+    const modal = document.getElementById('videoModal');
+    if (e.target === modal) {
+        closeVideoModal();
     }
 });
